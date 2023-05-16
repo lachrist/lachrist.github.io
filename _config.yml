@@ -3,7 +3,7 @@ author: Laurent Christophe
 encoding: utf-8
 email: laurent.christophe.terken@gmail.com
 description: A humble attempt at broadcasting stuff to the world.
-source: source
+source: docs
 destination: _site
 baseurl: ""
 url: "https://lachrist.github.io"
