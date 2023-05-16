@@ -3,9 +3,7 @@ author: Laurent Christophe
 encoding: utf-8
 email: laurent.christophe.terken@gmail.com
 description: A humble attempt at broadcasting stuff to the world.
-source: docs
 destination: _site
-baseurl: ""
 url: "https://lachrist.github.io"
 github_username: lachrist
 theme: minima
@@ -14,12 +12,11 @@ highlighter: rouge
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
-exclude: []
 markdown_ext: md
 header_pages:
-  - blog.html
-  - aran.html
-  - resources.md
+  - pages/blog.html
+  - pages/aran.html
+  - pages/resources.md
 collections:
   drafts:
     output: false
