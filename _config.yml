@@ -1,7 +1,8 @@
-title: lachrist's blog
+title: lachrist
+author: Laurent Christophe
 encoding: utf-8
 email: laurent.christophe.terken@gmail.com
-description: This my attempt at broadcasting mostly coding-related stuff to the world.
+description: A humble attempt at broadcasting stuff to the world.
 source: source
 destination: _site
 baseurl: ""
@@ -15,7 +16,13 @@ plugins:
   - jekyll-seo-tag
 exclude: []
 markdown_ext: md
+header_pages:
+  - blog.html
+  - aran.html
+  - resources.md
 collections:
-  blog:
+  drafts:
+    output: false
+  posts:
     output: true
-    permalink: pretty
+    permalink: /blog/:year/:month/:day/:title/
