@@ -21,80 +21,15 @@ title: Aran
 
 <div>** WORK IN PROGRESS **</div>
 
-<textarea id="target" class="code"></textarea>
 <textarea id="analysis" class="code"></textarea>
-<button id="run">Run Analysis</button>
-<code id="console" class="code"></code>
-<iframe id="sandbox" sandbox="allow-scripts"></iframe>
+<textarea id="target" class="code"></textarea>
+<button id="play">Play</button>
+<button id="stop">Stop</button>
+<code id="log" class="code"></code>
 
-<script>
-  {
-    const sanitize = (code) =>
-      code.replace(/<\/script>/gi, '<\\/script>');
-    const target = document.getElementById("target");
-    target.value = "'Hello, World!';";
-    const analysis = document.getElementById("analysis");
-    analysis.value = `
-      {
-        const {
-          eval: evalGlobal,
-          aran,
-          astring,
-          acorn,
-          log,
-          target,
-        } = globalThis;
-        log(
-          evalGlobal(
-            astring.generate(
-              aran.instrument(
-                acorn.parse(
-                  target,
-                ),
-              ),
-            ),
-          ),
-        );
-      }
-    `;
-    const sandbox = document.getElementById("sandbox");
-    const console = document.getElementById("console");
-    window.addEventListener("message", (event) => {
-      console.textContent += event.data;
-    });
-    document.getElementById("run").addEventListener("click", (event) => {
-      console.textContent = "";
-      sandbox.srcdoc = "";
-      sandbox.srcdoc = `
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-          <meta charset="UTF-8">
-        </head>
-        <body>
-          <script src="aran/index.js"><\/script>
-          <script>
-            globalThis.target = ${JSON.stringify((target.value))};
-          <\/script>
-          <script>
-            try {
-              ${analysis.value}
-            } catch (error) {
-              log(error);
-              throw error;
-            }
-          <\/script>
-        </body>
-        </html>
-      `;
-    });
-  }
-</script>
+<script type="module" src="./aran/index.mjs"></script>
 
 <style>
-  #sandbox {
-    display: none;
-  }
   .code {
     display: block;
     box-sizing: border-box;
@@ -108,7 +43,10 @@ title: Aran
     min-height: 100px;
     margin-bottom: 10px;
   }
-  #run {
+  #play {
+    margin-right: 10px;
+  }
+  #play, #stop {
     margin-bottom: 10px;
     font-family: monospace;
     font-size: 14px;

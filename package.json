@@ -12,14 +12,12 @@
   "license": "MIT",
   "keywords": [],
   "scripts": {
-    "bundle-aran": "npx rollup --config docs/aran/rollup.config.js",
+    "setup-aran": "cp ./node_modules/astring/dist/astring.mjs ./node_modules/acorn/dist/acorn.mjs ./docs/aran",
     "serve": "cd docs && bundle exec jekyll serve"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^15.2.3",
     "acorn": "^8.12.1",
     "aran": "^2.5.1",
-    "astring": "^1.8.6",
-    "rollup": "^4.18.1"
+    "astring": "^1.8.6"
   }
 }
