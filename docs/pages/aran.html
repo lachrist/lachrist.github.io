@@ -16,3 +16,102 @@ title: Aran
     {% endif %}
   {% endfor %}
 </ul>
+
+<h2>Aran @next Demonstrator</h2>
+
+<div>** WORK IN PROGRESS **</div>
+
+<textarea id="target" class="code"></textarea>
+<textarea id="analysis" class="code"></textarea>
+<button id="run">Run Analysis</button>
+<code id="console" class="code"></code>
+<iframe id="sandbox" sandbox="allow-scripts"></iframe>
+
+<script>
+  {
+    const sanitize = (code) =>
+      code.replace(/<\/script>/gi, '<\\/script>');
+    const target = document.getElementById("target");
+    target.value = "'Hello, World!';";
+    const analysis = document.getElementById("analysis");
+    analysis.value = `
+      {
+        const {
+          eval: evalGlobal,
+          aran,
+          astring,
+          acorn,
+          log,
+          target,
+        } = globalThis;
+        log(
+          evalGlobal(
+            astring.generate(
+              aran.instrument(
+                acorn.parse(
+                  target,
+                ),
+              ),
+            ),
+          ),
+        );
+      }
+    `;
+    const sandbox = document.getElementById("sandbox");
+    const console = document.getElementById("console");
+    window.addEventListener("message", (event) => {
+      console.textContent += event.data;
+    });
+    document.getElementById("run").addEventListener("click", (event) => {
+      console.textContent = "";
+      sandbox.srcdoc = "";
+      sandbox.srcdoc = `
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+        </head>
+        <body>
+          <script src="aran/index.js"><\/script>
+          <script>
+            globalThis.target = ${JSON.stringify((target.value))};
+          <\/script>
+          <script>
+            try {
+              ${analysis.value}
+            } catch (error) {
+              log(error);
+              throw error;
+            }
+          <\/script>
+        </body>
+        </html>
+      `;
+    });
+  }
+</script>
+
+<style>
+  #sandbox {
+    display: none;
+  }
+  .code {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    font-family: monospace;
+    font-size: 14px;
+    white-space: pre;
+    overflow: auto;
+    resize: vertical;
+    min-height: 100px;
+    margin-bottom: 10px;
+  }
+  #run {
+    margin-bottom: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+</style>
