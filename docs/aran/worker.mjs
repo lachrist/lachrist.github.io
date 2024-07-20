@@ -1,5 +1,5 @@
-import * as astring from "./astring.mjs";
-import * as acorn from "./acorn.mjs";
+import * as astring from "astring";
+import * as acorn from "acorn";
 
 const { String, eval: evalGlobal, addEventListener, postMessage } = globalThis;
 
