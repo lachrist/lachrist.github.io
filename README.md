@@ -1,5 +1,5 @@
 
-Repository for my [personnal website](https://lachrist.github.io).
+Repository for my [personnal page](https://lachrist.github.io).
 
 ```
 bundle install

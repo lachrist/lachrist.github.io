@@ -1,5 +1,4 @@
 ---
-permalink: /resources.html
 layout: page
 title: Resources
 ---

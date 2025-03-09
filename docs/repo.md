@@ -1,5 +1,4 @@
 ---
-permalink: /repo.html
 layout: page
 title: Repositories
 ---

@@ -2,8 +2,7 @@ title: lachrist
 author: Laurent Christophe
 encoding: utf-8
 email: laurent.christophe.terken@gmail.com
-description: A humble attempt at broadcasting stuff to the world.
-destination: _site
+description: "Laurent Christophe's personal page"
 url: "https://lachrist.github.io"
 github_username: lachrist
 theme: minima
@@ -14,9 +13,9 @@ plugins:
   - jekyll-seo-tag
 markdown_ext: md
 header_pages:
-  - pages/blog.html
-  - pages/aran.html
-  - pages/resources.md
+  - repo.md
+  - blog.md
+  - resources.md
 collections:
   drafts:
     output: false
