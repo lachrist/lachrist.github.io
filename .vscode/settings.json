@@ -7,6 +7,7 @@
     "editor.autoIndent": "none",
     "editor.tabSize": 2
   },
+  "latex-workshop.latex.autoBuild.run": "never",
   "latex-assistant.openai": [
     {
       "name": "revise",
