@@ -2,8 +2,8 @@
 layout: page
 ---
 
-I'm a PhD student at the [Vrije Universiteit Brussel](https://www.vub.be) in the [Software Languages Lab](https://soft.vub.ac.be), where my research focuses on dynamic program analysis, specifically for JavaScript. I'm the author of [Aran](https://github.com/lachrist/aran), an advanced JavaScript code instrumenter.
+I'm a consultant and researcher at the [Vrije Universiteit Brussel](https://www.vub.be), working in the [Software Languages Lab](https://soft.vub.ac.be). My research focuses on dynamic program analysis, particularly for JavaScript. I'm the author of [Aran](https://github.com/lachrist/aran), an advanced JavaScript code instrumenter.
 
-While research has been my primary focus, I've spent numerous years teaching Functional Programming at the Vrije Universiteit Brussel. I've also had the opportunity to lead several R&D projects, including developing the JavaScript client for the [AppMap](https://appmap.io) tool suite and creating the prototype for [EasyWanit](https://www.wanit.com/easywanit).
+While research has been my main focus, I've also led several R&D projects—most notably developing the JavaScript client for the [AppMap](https://appmap.io) tool suite, and creating the prototype for [EasyWanit](https://www.wanit.com/easywanit).
 
-As an enthusiastic software developer, I specialize in JavaScript, TypeScript, and Haskell, with a strong interest in programming languages, compilers, and interpreters. I am also a passionate advocate for functional programming as a way to manage complexity.
+As an enthusiastic software developer and open-source contributor, I specialize in JavaScript and TypeScript, but I'm also proficient in many other mainstream programming languages including SQL, C, C++, Java, and Python. I have experience with more esoteric languages as well, such as Scheme, Haskell, and Prolog.

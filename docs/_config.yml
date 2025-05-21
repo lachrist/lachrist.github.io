@@ -1,9 +1,10 @@
 title: lachrist
 author: Laurent Christophe
 encoding: utf-8
-email: laurent.christophe.terken@gmail.com
+email: laurent.christophe@vub.be
 description: "Laurent Christophe's personal page"
 url: "https://lachrist.github.io"
+linkedin_username: lachrist
 github_username: lachrist
 theme: minima
 markdown: kramdown
