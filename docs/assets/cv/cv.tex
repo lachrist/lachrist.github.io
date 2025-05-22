@@ -33,6 +33,9 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 
+\newcommand{\LeftColumn}[0]{6.0cm}
+\newcommand{\MarginColumn}[0]{32pt}
+\newcommand{\RightColumn}[0]{10.5cm}
 \newcommand{\EducationSkip}[0]{12pt}
 \newcommand{\ItemSkip}[0]{4pt}
 \newcommand{\SubItemSkip}[0]{0pt}
@@ -111,7 +114,7 @@
 
 \begin{document}
 
-\begin{minipage}[t]{6cm}
+\begin{minipage}[t]{\LeftColumn}
 
 {\Huge\sffamily\bfseries Laurent} \\[0pt]
 
@@ -152,13 +155,12 @@ I'm Laurent Christophe, a consultant and Ph.D. student at the Vrije Universiteit
 & Supervisors: \\[\SubSubItemSkip]
 & \quad Prof. Dr. Coen De Roover\\[\SubSubItemSkip]
 & \quad Prof. Dr. Wolfgang De Meuter\\[\EducationSkip]
-\faCaretRight~~ & MSc in Engineering \\[\SubSubItemSkip]
-& \quad -- Computer Science \\[\SubItemSkip]
+\faCaretRight~~ & MSc (Eng) -- Computer Science \\[\SubItemSkip]
 & Université Libre de Bruxelles \\[\SubItemSkip]
 & \emph{2010 -- 2012} \\[\SubItemSkip]
-& Graduated with Great Distinction \\[\EducationSkip]
-\faCaretRight~~ & BSc in Engineering \\[\SubSubItemSkip]
-& \quad -- Civil Engineering \\[\SubItemSkip]
+& Graduated with Great Distinction \\[\SubSubItemSkip]
+& \quad (Top 25\% of class) \\[\EducationSkip]
+\faCaretRight~~ & BSc (Eng) -- Civil Engineering \\[\SubItemSkip]
 & Université Libre de Bruxelles \\[\SubItemSkip]
 & \emph{2007 -- 2010} \\[\EducationSkip]
 \end{tabular}
@@ -166,23 +168,22 @@ I'm Laurent Christophe, a consultant and Ph.D. student at the Vrije Universiteit
 \EndRubric{}
 
 \end{minipage}
-\hspace{32pt}
-\begin{minipage}[t]{10.5cm}
+\hspace{\MarginColumn}
+\begin{minipage}[t]{\RightColumn}
 \vspace{-18pt} % Not sure why not alligned top
 \Rubric{\faBriefcase \quad PROFESSIONAL~~EXPERIENCE}
 
 \SubRubric{Independent Consultant}
 \emph{Oct 2023 -- Present} \\[\BeginSubRubricSkip]
 \begin{tabularx}{\linewidth}{@{}l@{}l}
-\faCaretRight~~ & Developed multiple web applications \\[\SubItemSkip]
-& e.g., \Link{https://collectifsante1040.be} \\[\SubItemSkip]
-& e.g., \Link{https://la-nage-saint-gilles.be} \\[\ItemSkip]
+\faCaretRight~~ & Developed several web applications \\[\SubItemSkip]
 \faCaretRight~~ & Completed and submitted Ph.D. dissertation \\[\ItemSkip]
 \end{tabularx}
 \EndSubRubric{}
 
 \SubRubric{AppMap, USA -- Software Engineer}
-\emph{Mar 2021 -- Sep 2023} \quad \href{https://appmap.io}{\texttt{https://appmap.io}} \\[\BeginSubRubricSkip]
+% \href{https://appmap.io}{\texttt{https://appmap.io}}
+\emph{Mar 2021 -- Sep 2023} \\[\BeginSubRubricSkip]
 \begin{tabularx}{\linewidth}{@{}l@{}l}
 \faCaretRight~~ & Developed a JavaScript code instrumenter \\[\SubItemSkip]
 & Recording of large volumes of execution data \\[\SubItemSkip]
@@ -199,7 +200,8 @@ I'm Laurent Christophe, a consultant and Ph.D. student at the Vrije Universiteit
 \EndSubRubric{}
 
 \SubRubric{Wanit, Belgium -- Software Engineer}
-\emph{Jan 2021 -- Mar 2021} \quad \href{https://www.wanit.com}{\texttt{https://www.wanit.com}}\\[\BeginSubRubricSkip]
+% \href{https://www.wanit.com}{\texttt{https://www.wanit.com}}
+\emph{Jan 2021 -- Mar 2021} \\[\BeginSubRubricSkip]
 \begin{tabularx}{\linewidth}{@{}l@{}X}
 \faCaretRight~~ & Developed the prototype of EasyWanit \\[\SubItemSkip]
 & Mobile app built with Ionic \\[\SubItemSkip]
@@ -213,7 +215,7 @@ I'm Laurent Christophe, a consultant and Ph.D. student at the Vrije Universiteit
 \faCaretRight~~ & Published in renowned international conferences: \\[\SubSubItemSkip]
 & \quad ICSME, SANER, GPCE \\[\ItemSkip]
 \faCaretRight~~ & Maintained extensive artifact records: \\[\SubSubItemSkip]
-& \quad 60+ npm packages with \underline{650K+} downloads \\[\ItemSkip]
+& \quad 60+ npm packages with \textbf{650K+} downloads \\[\ItemSkip]
 \faCaretRight~~ & Research supported: \\[\SubSubItemSkip]
 & \quad Multiple publications and dozens of BA/MA theses \\[\ItemSkip]
 \faCaretRight~~ & Contributed to open-source projects: \\[\SubSubItemSkip]
@@ -238,11 +240,11 @@ I'm Laurent Christophe, a consultant and Ph.D. student at the Vrije Universiteit
 
 \newpage
 
-\begin{minipage}[t]{6cm}
+\begin{minipage}[t]{\LeftColumn}
 \Rubric{\faCode \quad PROGRAMMING~~SKILLS}
 \begin{tabularx}{\linewidth}{@{}l@{}X}
-\faCaretRight~~ & Expert in: JavaScript and TypeScript \\[\ItemSkip]
-\faCaretRight~~ & Competent in: SQL, Python, Ruby, Java, Scala, C, C++, HTML, CSS, Haskell, Scheme, Prolog, LaTeX \\[\ItemSkip]
+\faCaretRight~~ & Expert: JavaScript and TypeScript \\[\ItemSkip]
+\faCaretRight~~ & Competent in: SQL, Python, Java, Ruby, C, C++, HTML, CSS, Haskell, Scala, Scheme, Prolog, LaTeX \\[\ItemSkip]
 \end{tabularx}
 \vspace{12pt}
 
@@ -286,8 +288,8 @@ I'm Laurent Christophe, a consultant and Ph.D. student at the Vrije Universiteit
 \vspace{12pt}
 
 \end{minipage}
-\hspace{32pt}
-\begin{minipage}[t]{10.5cm}
+\hspace{\MarginColumn}
+\begin{minipage}[t]{\RightColumn}
 
 \Rubric{\faBook \quad PUBLICATIONS}
 
