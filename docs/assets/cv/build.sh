@@ -1,4 +1,4 @@
-xelatex cv.tex
+xelatex cv
 biber cv
-xelatex cv.tex
-xelatex cv.tex
+xelatex cv
+xelatex cv

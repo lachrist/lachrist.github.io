@@ -1,3 +1,7 @@
 cv.*
 !cv.pdf
 !cv.tex
+
+cv-academic.*
+!cv-academic.pdf
+!cv-academic.tex

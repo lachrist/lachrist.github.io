@@ -1,5 +1,3 @@
-% Design credit: LianTze Lim (liantze@gmail.com)
-
 \documentclass[a4paper,11pt,english]{article}
 \usepackage[
   backend=biber,
@@ -9,11 +7,12 @@
   firstinits=true,
 ]{biblatex}
 \usepackage[
+  % showframe,
   a4paper,
-  nohead,
-  nofoot,
-  hmargin=2.25cm,
-  vmargin=2cm,
+  top=2cm,
+  bottom=2cm,
+  left=1.5cm,
+  right=1.5cm,
 ]{geometry}
 \usepackage{fontspec}
 \usepackage[medium,bold]{cabin}
@@ -26,70 +25,47 @@
 ]{hyperref}
 \usepackage{fontawesome5}
 \usepackage{inconsolata}
+\usepackage{tabularx}
+\usepackage{enumitem}
 
-\definecolor{SwishLineColour}{HTML}{88AC0B}
-\definecolor{MarkerColour}{HTML}{B6073F}
-
-\newcommand{\FamilyName}{Christophe}
-
-\newcommand{\Link}[1]{\href{#1}{\texttt{#1}}}
-\setmonofont{Inconsolata}
+\setmainfont{Helvetica}
 
 \setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\newcommand{\EducationSkip}[0]{12pt}
+\newcommand{\ItemSkip}[0]{4pt}
+\newcommand{\SubItemSkip}[0]{0pt}
+\newcommand{\SubSubItemSkip}[0]{0pt}
 
 %%%%%%%%%%
 % Rubric %
 %%%%%%%%%%
 
-\newcommand{\rubric}[1]{%
-  \vspace{20pt}%
-  \begin{tikzpicture}[baseline]
-    \shade[
-      left color=SwishLineColour!60!white,
-      right color=white
-    ] rectangle (\textwidth,2.5pt);
-    \node[
-      font=\Large\sffamily\bfseries,
-      inner sep=0pt,
-      text ragged,
-      anchor=south west,
-      text depth=.5ex,
-      text height=1.5ex
-    ] at (0pt,2pt) {#1};
-  \end{tikzpicture}%
-  \vspace{10pt}%
+\newcommand{\BeginSubRubricSkip}[0]{6pt}
+\newcommand{\EndRubric}[0]{\vspace{24pt}}
+\newcommand{\BeginSubRubric}[0]{\vspace{6pt}}
+\newcommand{\EndSubRubric}[0]{\vspace{4pt}}
+
+\newcommand{\Rubric}[1]{%
+  \colorbox{gray!20}{\parbox{\linewidth}{\centering\sffamily\bfseries{}#1}}%
+  \vspace{12pt}%
 }
 
+\newcommand{\SubRubric}[1]{\parbox{\linewidth}{\sffamily\bfseries{}#1}}
+
 %%%%%%%%
-% Icon %
+% Link %
 %%%%%%%%
 
-\newcommand{\EmailIcon}{\textcolor{MarkerColour!80!black}{\faEnvelope[regular]}}
-\newcommand{\GithubIcon}{\textcolor{MarkerColour!80!black}{\faGithub}}
-\newcommand{\LinkedinIcon}{\textcolor{MarkerColour!80!black}{\faLinkedin}}
-\newcommand{\WebsiteIcon}{\textcolor{MarkerColour!80!black}{\faGlobe}}
-\newcommand{\EducationIcon}{\textcolor{MarkerColour!80!black}{\faGraduationCap}}
-\newcommand{\OngoingEducationIcon}{\textcolor{Grey}{\faGraduationCap}}
-\newcommand{\EmploymentIcon}{\textcolor{MarkerColour!80!black}{\faBriefcase}}
-\newcommand{\CodeIcon}{\textcolor{MarkerColour!80!black}{\faCode}}
-\newcommand{\LanguageIcon}{\textcolor{MarkerColour!80!black}{\faLanguage}}
-\newcommand{\SwimmingIcon}{\textcolor{MarkerColour!80!black}{\faSwimmer}}
-\newcommand{\SubIcon}{\faCaretRight}
-\newcommand{\TransparentSubIcon}{\textcolor{white}{\faCaretRight}}
-\newcommand*\EntryIcon[1]{\tikz[baseline=(char.base)]{\node[
-  shape=circle,
-  text=white,
-  fill=MarkerColour!80!black,
-  font=\sffamily\scriptsize\bfseries,
-  inner sep=1pt,
-  text height=1.35ex,
-  minimum width=1.5em,
-  text centered,
-] (char) {#1}}}
+\newcommand{\Link}[1]{\href{#1}{\texttt{#1}}}
+\setmonofont{Inconsolata}
 
 %%%%%%%%%%%%%%%%%
 % Bibliopgraphy %
 %%%%%%%%%%%%%%%%%
+
+\newcommand{\FamilyName}{Christophe}
 
 \DeclareBibliographyDriver{inproceedings}{%
   \printnames{author}.%
@@ -120,7 +96,7 @@
 
 \newcounter{bibitem}
 \AtBeginBibliography{\setcounter{bibitem}{1}}
-\DeclareFieldFormat{labelnumberwidth}{\makebox[2.5em][l]{\EntryIcon{\thebibitem}}}
+\DeclareFieldFormat{labelnumberwidth}{\makebox[1.5em][l]{\thebibitem}}
 \setlength{\biblabelsep}{0pt}
 \AtEveryBibitem{\stepcounter{bibitem}}
 \AtEveryBibitem{\iffieldundef{doi}{}{\clearfield{url}}}
@@ -130,85 +106,193 @@
 \nocite{*}
 
 %%%%%%%%
-% Main %
+% Body %
 %%%%%%%%
 
 \begin{document}
 
-\begin{tabular}{@{}l@{\hspace{24pt}}l}
-  \begin{tabular}[t]{l}
-    \LARGE\sffamily\bfseries Laurent Christophe, MEng.
-  \end{tabular}
-&
-  \begin{tabular}[t]{@{}l@{\hspace{4pt}}l}
-    \EmailIcon & \href{mailto:laurent.christophe.terken@gmail.com}{\texttt{laurent.christophe.terken@gmail.com}} \\[1pt]
-    \WebsiteIcon & \Link{https://lachrist.github.io} \\[1pt]
-    \GithubIcon & \Link{https://github.com/lachrist} \\[1pt]
-    \LinkedinIcon & \Link{https://www.linkedin.com/in/lachrist} \\[1pt]
-  \end{tabular}
-\\
+\begin{minipage}[t]{6cm}
+
+{\Huge\sffamily\bfseries Laurent} \\[0pt]
+
+{\Huge\sffamily\bfseries Christophe} \\[0pt]
+
+\vspace{8pt}
+
+{\Large Software Engineer} \\[0pt]
+
+\vspace{8pt}
+
+{\footnotesize\begin{tabular}[t]{@{}l@{\hspace{4pt}}l}
+  \faEnvelope & \href{mailto:laurent.christophe.terken@gmail.com}{\texttt{laurent.christophe.terken@gmail.com}} \\[4pt]
+  \faGlobe & \Link{https://lachrist.github.io} \\[4pt]
+  \faGithub & \Link{https://github.com/lachrist} \\[4pt]
+  \faLinkedin & \Link{https://www.linkedin.com/in/lachrist} \\[0pt]
+\end{tabular}}
+
+\EndRubric{}
+
+\Rubric{\faUser \quad ABOUT ME}
+
+I'm Laurent Christophe, a consultant and Ph.D. student at the Vrije Universiteit Brussel (VUB). My dissertation is currently under review, and I expect to graduate this summer. I'm an enthusiastic programmer and a prolific contributor to open-source projects.
+
+\EndRubric{}
+
+\Rubric{\faGraduationCap \quad EDUCATION}
+
+\begin{tabular}{@{}l@{}l}
+\textcolor{gray}{\faCaretRight}~~ & \textcolor{gray}{Ph.D. in Computer Science} \\[\SubSubItemSkip]
+& \quad \textcolor{gray}{(under review)} \\[\SubItemSkip]
+& Vrije Universiteit Brussel \\[\SubItemSkip]
+& \emph{2012 -- Present} \\[\SubItemSkip]
+& Title:\\[\SubSubItemSkip]
+& \quad Provenance-Based \\[\SubSubItemSkip]
+& \quad Dynamic Analysis in \\[\SubSubItemSkip]
+& \quad Managed Languages \\[\SubItemSkip]
+& Supervisors: \\[\SubSubItemSkip]
+& \quad Prof. Dr. Coen De Roover\\[\SubSubItemSkip]
+& \quad Prof. Dr. Wolfgang De Meuter\\[\EducationSkip]
+\faCaretRight~~ & MSc in Engineering \\[\SubSubItemSkip]
+& \quad -- Computer Science \\[\SubItemSkip]
+& Université Libre de Bruxelles \\[\SubItemSkip]
+& \emph{2010 -- 2012} \\[\SubItemSkip]
+& Graduated with Great Distinction \\[\EducationSkip]
+\faCaretRight~~ & BSc in Engineering \\[\SubSubItemSkip]
+& \quad -- Civil Engineering \\[\SubItemSkip]
+& Université Libre de Bruxelles \\[\SubItemSkip]
+& \emph{2007 -- 2010} \\[\EducationSkip]
 \end{tabular}
 
-\rubric{Employment History}
+\EndRubric{}
 
-\begin{tabular}{@{}l@{\hspace{4pt}}l@{\hspace{4pt}}lll}
-Oct 2023 & -- & Present & \EmploymentIcon & Independent Consultant focusing on Web Apps \\[1pt]
-& & & & Skills: JavaScript, TypeScript, React, Node.js, SQL, HTML, CSS \\[8pt]
+\end{minipage}
+\hspace{32pt}
+\begin{minipage}[t]{10.5cm}
+\vspace{-18pt} % Not sure why not alligned top
+\Rubric{\faBriefcase \quad PROFESSIONAL~~EXPERIENCE}
 
-Mar 2021 & -- & Sep 2023 & \EmploymentIcon & Lead Engineer for the JavaScript client of the AppMap tool suite \\[1pt]
-& & & & \href{https://appmap.io}{\texttt{https://appmap.io}} \\[1pt]
-& & & & Visualization of program execution via code instrumentation \\[1pt]
-& & & & Skills: JavaScript, TypeScript, Agile Methodology, Git workflow, React \\[8pt]
+\SubRubric{Independent Consultant}
+\emph{Oct 2023 -- Present} \\[\BeginSubRubricSkip]
+\begin{tabularx}{\linewidth}{@{}l@{}l}
+\faCaretRight~~ & Developed multiple web applications \\[\SubItemSkip]
+& e.g., \Link{https://collectifsante1040.be} \\[\SubItemSkip]
+& e.g., \Link{https://la-nage-saint-gilles.be} \\[\ItemSkip]
+\faCaretRight~~ & Completed and submitted Ph.D. dissertation \\[\ItemSkip]
+\end{tabularx}
+\EndSubRubric{}
 
-Jan 2021 & -- & Mar 2021 & \EmploymentIcon & Lead Engineer for the prototype of EasyWanit \\[1pt]
-& & & & \href{https://www.wanit.com/easywanit}{\texttt{https://www.wanit.com/easywanit}} \\[1pt]
-& & & & A mobile application built in Ionic handling a custom Bluetooth protocol \\[8pt]
+\SubRubric{AppMap, USA -- Software Engineer}
+\emph{Mar 2021 -- Sep 2023} \quad \href{https://appmap.io}{\texttt{https://appmap.io}} \\[\BeginSubRubricSkip]
+\begin{tabularx}{\linewidth}{@{}l@{}l}
+\faCaretRight~~ & Developed a JavaScript code instrumenter \\[\SubItemSkip]
+& Recording of large volumes of execution data \\[\SubItemSkip]
+& Seamless integration with: \\[\SubSubItemSkip]
+& \quad GitHub Actions, Node.js, Express, Mocha, Jest \\[\SubItemSkip]
+& CI/CD stack: Travis, semantic-release, Prettier, ESLint, Mocha \\[\ItemSkip]
+\faCaretRight~~ & Developed a flame graph visualization in Vue \\[\SubItemSkip]
+& Interactive exploration of performance impact \\[\SubItemSkip]
+& Runs in the browser and within VS Code \\[\SubItemSkip]
+& Automated testing using Cypress and Chromatic \\[\ItemSkip]
+\faCaretRight~~ & Contributed broadly across the toolchain \\[\SubItemSkip]
+& Authored and reviewed hundreds of pull requests \\[\ItemSkip]
+\end{tabularx}
+\EndSubRubric{}
 
-Sep 2012 & -- & Dec 2020 & \EmploymentIcon & Ph.D. student at Vrije Universiteit Brussel \\[1pt]
-& & & & Open source contributions, written academic English, teaching duties \\[8pt]
-\end{tabular}
+\SubRubric{Wanit, Belgium -- Software Engineer}
+\emph{Jan 2021 -- Mar 2021} \quad \href{https://www.wanit.com}{\texttt{https://www.wanit.com}}\\[\BeginSubRubricSkip]
+\begin{tabularx}{\linewidth}{@{}l@{}X}
+\faCaretRight~~ & Developed the prototype of EasyWanit \\[\SubItemSkip]
+& Mobile app built with Ionic \\[\SubItemSkip]
+& Communication with boiler using a custom BLE protocol \\[\ItemSkip]
+\end{tabularx}
+\EndSubRubric{}
 
-\rubric{Education}
+\SubRubric{Vrije Universiteit Brussel -- Ph.D. student}
+\emph{Sep 2012 -- Dec 2020} \\[\BeginSubRubricSkip]
+\begin{tabularx}{\linewidth}{@{}l@{}X}
+\faCaretRight~~ & Published in renowned international conferences: \\[\SubSubItemSkip]
+& \quad ICSME, SANER, GPCE \\[\ItemSkip]
+\faCaretRight~~ & Maintained extensive artifact records: \\[\SubSubItemSkip]
+& \quad 60+ npm packages with \underline{650K+} downloads \\[\ItemSkip]
+\faCaretRight~~ & Research supported: \\[\SubSubItemSkip]
+& \quad Multiple publications and dozens of BA/MA theses \\[\ItemSkip]
+\faCaretRight~~ & Contributed to open-source projects: \\[\SubSubItemSkip]
+& \quad Node.js, Jest, ESLint, Acorn, Astring, Engine262 \\[\ItemSkip]
+\faCaretRight~~ & Collaborated with ``Hack Your Future'' Belgium \\[\ItemSkip]
+\faCaretRight~~ & Served as Teaching Assistant: \\[\SubSubItemSkip]
+& \quad Functional Programming course -- 7 years \\[\ItemSkip]
+\end{tabularx}
+\EndSubRubric{}
 
-\begin{tabular}{@{}l@{\hspace{4pt}}l@{\hspace{4pt}}llll}
-  2012 & -- & Present & \OngoingEducationIcon & Ph.D. in Computer Science (under review; degree expected Summer 2025) \\[1pt]
-  & & & & Vrije Universiteit Brussel \\[1pt]
-  & & & & Title: Provenance-Based Dynamic Analysis in Managed Languages \\[1pt]
-  & & & & Supervisors: Prof. Dr. Coen De Roover and Prof. Dr. Wolfgang De Meuter \\[4pt]
-  2010 & -- & 2012 & \EducationIcon & Master of Science in Engineering -- Computer Science \\
-  & & & & Université Libre de Bruxelles \\[1pt]
-  & & & & Graduated with Great Distinction \\[1pt]
-  & & & & Thesis: Iterative Typing \\[1pt]
-  & & & & ~~ Supervisor: Prof. Dr. Wolfgang De Meuter \\[1pt]
-  & & & & ~~ Advisor: Dr. Dries Harnie \\[4pt]
-  2007 & -- & 2010 & \EducationIcon & Bachelor of Science in Engineering -- Civil Engineering \\[1pt]
-  & & & & Université Libre de Bruxelles \\[4pt]
-  2008 & -- & 2009 & \EducationIcon & Completed the first year of studies in Physical Sciences \\[1pt]
-  & & & & Université Libre de Bruxelles \\[4pt]
-\end{tabular}
+\SubRubric{Audaxis, Belgium -- Intern}
+\emph{Jun 2011 -- Sep 2011} \\[\BeginSubRubricSkip]
+\begin{tabularx}{\linewidth}{@{}l@{}X}
+\faCaretRight~~ & Developed a Java-based point-of-sale system \\[\SubItemSkip]
+& Integration with Compiere ERP \\[\SubItemSkip]
+& Managed deployment at a Brico store \\[\ItemSkip]
+\faCaretRight~~ & Received a job offer \\[\ItemSkip]
+\end{tabularx}
+\EndSubRubric{}
 
-\rubric{Skills}
-
-\begin{tabular}{@{}ll}
-  \CodeIcon & Expert in JavaScript and TypeScript \\[1pt]
-  \CodeIcon & Competent in SQL, Python, Java, Scala, C, C++, Haskell, Scheme, and LaTeX \\[1pt]
-  \LanguageIcon & Native French speaker, fluent in English, basic knowledge of Dutch \\[1pt]
-\end{tabular}
+\end{minipage}
 
 \newpage
 
-\rubric{Miscellaneous Experience}
+\begin{minipage}[t]{6cm}
+\Rubric{\faCode \quad PROGRAMMING~~SKILLS}
+\begin{tabularx}{\linewidth}{@{}l@{}X}
+\faCaretRight~~ & Expert in: JavaScript and TypeScript \\[\ItemSkip]
+\faCaretRight~~ & Competent in: SQL, Python, Ruby, Java, Scala, C, C++, HTML, CSS, Haskell, Scheme, Prolog, LaTeX \\[\ItemSkip]
+\end{tabularx}
+\vspace{12pt}
 
-\begin{tabular}{@{}l@{\hspace{1em}}l}
-  \CodeIcon & Enthusiastic programmer and open-source contributor \\[1pt]
-  \CodeIcon & Creator of Aran, a JavaScript code instrumenter \\[1pt]
-  & \Link{https://lachrist.github.io/aran} \\[1pt]
-  \SwimmingIcon & Multiple-time Belgian podium finisher in swimming \\[1pt]
-  \SwimmingIcon & Head coach of the NSG swimming club in Saint-Gilles since 2011 \\[1pt]
-\end{tabular}
+\Rubric{\faTools \quad TOOLING~~EXPERIENCE}
 
-\rubric{Research Publications}
+\begin{tabularx}{\linewidth}{@{}l@{}X}
+\faCaretRight~~ & Frontend: React, Vue.js, Ionic, Next.js, Web Components \\[0pt]
+\faCaretRight~~ & Backend: Express, NestJS, Django, Flask, Ruby on Rails \\[0pt]
+\faCaretRight~~ & Databases: MySQL, MariaDB, SQLite, PostgreSQL \\[0pt]
+\faCaretRight~~ & Testing: xUnit, Jest, Mocha, Cypress, Chromatic, Selenium \\[0pt]
+\faCaretRight~~ & Build: esbuild, Webpack, Babel, semantic-release, Prettier, ESLint \\[0pt]
+\faCaretRight~~ & Package: npm, Maven \\[0pt]
+\faCaretRight~~ & CI/CD: Travis CI, GitHub Actions \\[0pt]
+\faCaretRight~~ & Infrastructure: Unix, GitHub, Git, VS Code, Eclipse \\[0pt]
+\end{tabularx}
+\vspace{12pt}
+
+\Rubric{\faNetworkWired~COMMUNICATION~PROTOCOLS}
+\begin{tabularx}{\linewidth}{@{}l@{}X}
+\faCaretRight~~ & HTTP, TCP/IP, SSL, POSIX Sockets, WebSocket, Bluetooth Low Energy (BLE) \\[0pt]
+\end{tabularx}
+\vspace{12pt}
+
+\Rubric{\faLanguage \quad LANGUAGE}
+\begin{tabularx}{\linewidth}{@{}l@{}l}
+\faCaretRight~~ & Native French speaker \\[0pt]
+\faCaretRight~~ & Fluent in English \\[0pt]
+\faCaretRight~~ & Basic knowledge of Dutch \\[0pt]
+\end{tabularx}
+\vspace{12pt}
+
+\Rubric{\faPuzzlePiece \quad MISCELLANEOUS}
+
+\begin{tabularx}{\linewidth}{@{}l@{}X}
+\faCaretRight~~ & Enthusiastic programmer and open-source contributor \\[0pt]
+\faCaretRight~~ & Creator of Aran, a JavaScript code instrumenter \\[0pt]
+  & \Link{https://lachrist.github.io/aran} \\[0pt]
+\faCaretRight~~ & Head coach of the NSG swimming club in Saint-Gilles since 2011 \\[0pt]
+\faCaretRight~~ & Multiple-time Belgian podium finisher in swimming \\[0pt]
+\end{tabularx}
+\vspace{12pt}
+
+\end{minipage}
+\hspace{32pt}
+\begin{minipage}[t]{10.5cm}
+
+\Rubric{\faBook \quad PUBLICATIONS}
 
 \printbibliography[heading={none}]
+
+\end{minipage}
 
 \end{document}

@@ -1,0 +1,2508 @@
+{
+  "objects": [
+    {
+      "downloads": { "monthly": 21752, "weekly": 4866 },
+      "dependents": 3,
+      "updated": "2025-05-22T06:11:33.407Z",
+      "searchScore": 49.704483,
+      "package": {
+        "name": "@appland/sql-parser",
+        "keywords": ["sql", "sqlite", "parser", "syntax", "ast"],
+        "version": "1.5.1",
+        "description": "JavaScript implementation of SQLite 3 query parser",
+        "sanitized_name": "@appland/sql-parser",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2022-03-07T17:52:41.071Z",
+        "links": {
+          "homepage": "https://github.com/applandinc/sqlite-parser#readme",
+          "repository": "git+ssh://git@github.com/applandinc/sqlite-parser.git",
+          "bugs": "https://github.com/applandinc/sqlite-parser/issues",
+          "npm": "https://www.npmjs.com/package/@appland/sql-parser"
+        }
+      },
+      "score": {
+        "final": 49.704483,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 1483, "weekly": 196 },
+      "dependents": 0,
+      "updated": "2025-05-16T14:27:21.714Z",
+      "searchScore": 38.83408,
+      "package": {
+        "name": "@appland/appmap",
+        "keywords": [],
+        "version": "3.189.0",
+        "sanitized_name": "@appland/appmap",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "Commons Clause + MIT",
+        "date": "2025-05-10T16:27:40.865Z",
+        "links": { "npm": "https://www.npmjs.com/package/@appland/appmap" }
+      },
+      "score": {
+        "final": 38.83408,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 1208, "weekly": 170 },
+      "dependents": 2,
+      "updated": "2025-05-20T15:37:04.874Z",
+      "searchScore": 37.63091,
+      "package": {
+        "name": "posix-socket-messaging",
+        "keywords": [
+          "Node",
+          "Posix",
+          "Socket",
+          "Synchronous",
+          "Messaging",
+          "Communication"
+        ],
+        "version": "0.0.1",
+        "description": "Simple messaging protocol for the posix-socket module",
+        "sanitized_name": "posix-socket-messaging",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2021-04-19T12:58:05.947Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/posix-socket-messaging#readme",
+          "repository": "git+https://github.com/lachrist/posix-socket-messaging.git",
+          "bugs": "https://github.com/lachrist/posix-socket-messaging/issues",
+          "npm": "https://www.npmjs.com/package/posix-socket-messaging"
+        }
+      },
+      "score": {
+        "final": 37.63091,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 1195, "weekly": 191 },
+      "dependents": 2,
+      "updated": "2025-05-20T19:21:24.409Z",
+      "searchScore": 35.347218,
+      "package": {
+        "name": "net-socket-messaging",
+        "keywords": [
+          "Node",
+          "Net",
+          "Socket",
+          "Asynchronous",
+          "Messaging",
+          "Communication"
+        ],
+        "version": "0.1.6",
+        "description": "Simple messaging protocol for node's net socket",
+        "sanitized_name": "net-socket-messaging",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2021-09-15T16:37:59.708Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/net-socket-messaging#readme",
+          "repository": "git+https://github.com/lachrist/net-socket-messaging.git",
+          "bugs": "https://github.com/lachrist/net-socket-messaging/issues",
+          "npm": "https://www.npmjs.com/package/net-socket-messaging"
+        }
+      },
+      "score": {
+        "final": 35.347218,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 1228, "weekly": 190 },
+      "dependents": 3,
+      "updated": "2025-05-21T09:41:26.822Z",
+      "searchScore": 35.227734,
+      "package": {
+        "name": "ajv-error-tree",
+        "keywords": [],
+        "version": "0.0.5",
+        "description": "Convert a list of [ajv](https://www.npmjs.com/package/ajv) errors into the logical tree it was always meant to be.",
+        "sanitized_name": "ajv-error-tree",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2021-08-12T08:09:57.955Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/ajv-error-tree#readme",
+          "repository": "git+https://github.com/lachrist/ajv-error-tree.git",
+          "bugs": "https://github.com/lachrist/ajv-error-tree/issues",
+          "npm": "https://www.npmjs.com/package/ajv-error-tree"
+        }
+      },
+      "score": {
+        "final": 35.227734,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 1212, "weekly": 204 },
+      "dependents": 3,
+      "updated": "2025-05-19T23:12:30.406Z",
+      "searchScore": 34.271435,
+      "package": {
+        "name": "posix-socket",
+        "keywords": [
+          "POSIX",
+          "Socket",
+          "C++",
+          "Addon",
+          "Synchronous",
+          "Low-Level"
+        ],
+        "version": "1.1.4",
+        "description": "POSIX Socket API on nodeJS",
+        "sanitized_name": "posix-socket",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2022-02-15T10:58:30.771Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/posix-socket",
+          "repository": "git+https://github.com/lachrist/posix-socket.git",
+          "bugs": "https://github.com/lachrist/posix-socket/issues",
+          "npm": "https://www.npmjs.com/package/posix-socket"
+        }
+      },
+      "score": {
+        "final": 34.271435,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 726, "weekly": 84 },
+      "dependents": 2,
+      "updated": "2025-05-21T15:16:11.608Z",
+      "searchScore": 33.32445,
+      "package": {
+        "name": "@appland/appmap-validate",
+        "keywords": [],
+        "version": "2.4.0",
+        "sanitized_name": "@appland/appmap-validate",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2023-08-07T16:29:53.506Z",
+        "links": {
+          "repository": "https://github.com/getappmap/appmap-js.git",
+          "npm": "https://www.npmjs.com/package/@appland/appmap-validate"
+        }
+      },
+      "score": {
+        "final": 33.32445,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 625, "weekly": 90 },
+      "dependents": 1,
+      "updated": "2025-05-21T18:51:09.395Z",
+      "searchScore": 32.789494,
+      "package": {
+        "name": "@appland/components",
+        "keywords": [],
+        "version": "4.46.4",
+        "description": "This repository bundles together AppMap models and Vue components in a single dependency.",
+        "sanitized_name": "@appland/components",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "Commons Clause + MIT",
+        "date": "2025-04-30T18:37:17.632Z",
+        "links": {
+          "homepage": "https://github.com/getappmap/appmap-js#readme",
+          "repository": "git+https://github.com/getappmap/appmap-js.git",
+          "bugs": "https://github.com/getappmap/appmap-js/issues",
+          "npm": "https://www.npmjs.com/package/@appland/components"
+        }
+      },
+      "score": {
+        "final": 32.789494,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 604, "weekly": 173 },
+      "dependents": 0,
+      "updated": "2025-05-21T13:23:00.709Z",
+      "searchScore": 32.114056,
+      "package": {
+        "name": "linvail",
+        "keywords": [
+          "Data Provenance",
+          "Instrumentation",
+          "Taint Analysis",
+          "Dynamic Program Analsysis",
+          "Membrane",
+          "Control Access System",
+          "Proxy",
+          "Aran"
+        ],
+        "version": "7.8.3",
+        "description": "Provenancial Equality for JavaScript",
+        "sanitized_name": "linvail",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2025-05-21T13:21:03.935Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/linvail",
+          "repository": "git+https://github.com/lachrist/linvail.git",
+          "bugs": "https://github.com/lachrist/linvail/issues",
+          "npm": "https://www.npmjs.com/package/linvail"
+        }
+      },
+      "score": {
+        "final": 32.114056,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 347, "weekly": 120 },
+      "dependents": 1,
+      "updated": "2025-05-18T13:06:15.159Z",
+      "searchScore": 30.326462,
+      "package": {
+        "name": "@appland/navie",
+        "keywords": [],
+        "version": "1.44.2",
+        "sanitized_name": "@appland/navie",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT + Commons Clause",
+        "date": "2025-05-11T13:03:11.519Z",
+        "links": { "npm": "https://www.npmjs.com/package/@appland/navie" }
+      },
+      "score": {
+        "final": 30.326462,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 530, "weekly": 143 },
+      "dependents": 12,
+      "updated": "2025-05-19T21:56:47.621Z",
+      "searchScore": 29.859339,
+      "package": {
+        "name": "@appland/models",
+        "keywords": [],
+        "version": "2.10.3",
+        "sanitized_name": "@appland/models",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "Commons Clause + MIT",
+        "date": "2024-06-08T09:31:49.869Z",
+        "links": { "npm": "https://www.npmjs.com/package/@appland/models" }
+      },
+      "score": {
+        "final": 29.859339,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 345, "weekly": 31 },
+      "dependents": 5,
+      "updated": "2025-05-21T13:38:33.767Z",
+      "searchScore": 29.13724,
+      "package": {
+        "name": "aran",
+        "keywords": [
+          "JavaScript",
+          "Instrumentation",
+          "Aspect Oriented Programming",
+          "Dynamic Analysis",
+          "Debugging",
+          "Monitoring",
+          "Sandboxing",
+          "Taint Analysis",
+          "Shadow Execution"
+        ],
+        "version": "5.2.2",
+        "description": "JavaScript instrumenter",
+        "sanitized_name": "aran",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2025-05-21T13:38:02.617Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/aran",
+          "repository": "git+https://github.com/lachrist/aran.git",
+          "bugs": "https://github.com/lachrist/aran/issues",
+          "npm": "https://www.npmjs.com/package/aran"
+        }
+      },
+      "score": {
+        "final": 29.13724,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 325, "weekly": 99 },
+      "dependents": 3,
+      "updated": "2025-05-21T13:52:46.260Z",
+      "searchScore": 28.801773,
+      "package": {
+        "name": "@appland/openapi",
+        "keywords": [],
+        "version": "1.8.0",
+        "description": "Shared code for OpenAPI support in AppLand products",
+        "sanitized_name": "@appland/openapi",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "Commons Clause + MIT",
+        "date": "2023-12-28T23:48:55.441Z",
+        "links": {
+          "repository": "git+https://github.com/getappmap/appmap-js.git",
+          "npm": "https://www.npmjs.com/package/@appland/openapi"
+        }
+      },
+      "score": {
+        "final": 28.801773,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 336, "weekly": 108 },
+      "dependents": 2,
+      "updated": "2025-05-19T21:51:59.216Z",
+      "searchScore": 27.433596,
+      "package": {
+        "name": "@appland/sequence-diagram",
+        "keywords": [],
+        "version": "1.12.0",
+        "description": "Generate sequence diagram from AppMap",
+        "sanitized_name": "@appland/sequence-diagram",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "Commons Clause + MIT",
+        "date": "2023-12-28T23:53:08.529Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/@appland/sequence-diagram"
+        }
+      },
+      "score": {
+        "final": 27.433596,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 232, "weekly": 60 },
+      "dependents": 2,
+      "updated": "2025-05-21T19:46:08.440Z",
+      "searchScore": 27.166792,
+      "package": {
+        "name": "@appland/rpc",
+        "keywords": [],
+        "version": "1.19.0",
+        "description": "AppMap RPC client and server",
+        "sanitized_name": "@appland/rpc",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "Commons Clause + MIT",
+        "date": "2025-04-09T19:15:25.801Z",
+        "links": { "npm": "https://www.npmjs.com/package/@appland/rpc" }
+      },
+      "score": {
+        "final": 27.166792,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 242, "weekly": 79 },
+      "dependents": 4,
+      "updated": "2025-05-20T04:02:59.229Z",
+      "searchScore": 27.001017,
+      "package": {
+        "name": "@appland/client",
+        "keywords": [],
+        "version": "1.23.0",
+        "sanitized_name": "@appland/client",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2024-10-15T22:26:27.138Z",
+        "links": { "npm": "https://www.npmjs.com/package/@appland/client" }
+      },
+      "score": {
+        "final": 27.001017,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 234, "weekly": 75 },
+      "dependents": 1,
+      "updated": "2025-05-20T20:37:16.732Z",
+      "searchScore": 26.37147,
+      "package": {
+        "name": "@appland/scanner",
+        "keywords": [],
+        "version": "1.88.0",
+        "description": "Analyze AppMaps for code flaws",
+        "sanitized_name": "@appland/scanner",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "Commons Clause + MIT",
+        "date": "2024-08-16T14:35:00.429Z",
+        "links": { "npm": "https://www.npmjs.com/package/@appland/scanner" }
+      },
+      "score": {
+        "final": 26.37147,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 267, "weekly": 54 },
+      "dependents": 1,
+      "updated": "2025-05-15T17:11:06.792Z",
+      "searchScore": 26.212511,
+      "package": {
+        "name": "@appland/search",
+        "keywords": [],
+        "version": "1.2.2",
+        "sanitized_name": "@appland/search",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "Commons Clause + MIT",
+        "date": "2025-05-01T17:03:09.689Z",
+        "links": { "npm": "https://www.npmjs.com/package/@appland/search" }
+      },
+      "score": {
+        "final": 26.212511,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 162, "weekly": 55 },
+      "dependents": 3,
+      "updated": "2025-05-21T11:06:44.813Z",
+      "searchScore": 24.902098,
+      "package": {
+        "name": "@appland/diagrams",
+        "keywords": [],
+        "version": "1.8.0",
+        "sanitized_name": "@appland/diagrams",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "Commons Clause + MIT",
+        "date": "2023-12-28T23:48:23.759Z",
+        "links": { "npm": "https://www.npmjs.com/package/@appland/diagrams" }
+      },
+      "score": {
+        "final": 24.902098,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 181, "weekly": 97 },
+      "dependents": 2,
+      "updated": "2025-05-19T23:38:08.789Z",
+      "searchScore": 24.15241,
+      "package": {
+        "name": "otiluke",
+        "keywords": [
+          "JavaScript",
+          "Toolbox",
+          "Source-to-Source Compiler",
+          "Transpiler",
+          "HTML",
+          "HTTP",
+          "MITM",
+          "Proxy",
+          "Node",
+          "CommonJS"
+        ],
+        "version": "5.4.3",
+        "description": "Deploy JavaScript code transformers written in JavaScript themselves on node and browsers",
+        "sanitized_name": "otiluke",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2019-03-15T15:49:51.682Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/otiluke#readme",
+          "repository": "git+https://github.com/lachrist/otiluke.git",
+          "bugs": "https://github.com/lachrist/otiluke/issues",
+          "npm": "https://www.npmjs.com/package/otiluke"
+        }
+      },
+      "score": {
+        "final": 24.15241,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 132, "weekly": 2 },
+      "dependents": 2,
+      "updated": "2025-05-21T19:47:22.138Z",
+      "searchScore": 23.462626,
+      "package": {
+        "name": "antena",
+        "keywords": ["Request", "Connect", "Http", "WebSocket", "Upgrade"],
+        "version": "0.0.1",
+        "description": "Simple messaging protocol for node's net socket",
+        "sanitized_name": "antena",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2021-04-12T08:53:08.182Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/net-socket-messaging#readme",
+          "repository": "git+https://github.com/lachrist/net-socket-messaging.git",
+          "bugs": "https://github.com/lachrist/net-socket-messaging/issues",
+          "npm": "https://www.npmjs.com/package/antena"
+        }
+      },
+      "score": {
+        "final": 23.462626,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 111, "weekly": 11 },
+      "dependents": 1,
+      "updated": "2025-05-20T09:11:58.700Z",
+      "searchScore": 22.674463,
+      "package": {
+        "name": "melf",
+        "keywords": [
+          "JavaScript",
+          "Remote Procedure Call",
+          "Processes",
+          "Communication",
+          "Synchronous",
+          "Asynchronous"
+        ],
+        "version": "2.2.13",
+        "description": "(A)Synchronous remote procedure calls",
+        "sanitized_name": "melf",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2019-05-20T17:13:43.449Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/melf",
+          "repository": "git+https://github.com/lachrist/melf.git",
+          "bugs": "https://github.com/lachrist/melf/issues",
+          "npm": "https://www.npmjs.com/package/melf"
+        }
+      },
+      "score": {
+        "final": 22.674463,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 89, "weekly": 5 },
+      "dependents": 0,
+      "updated": "2025-05-19T19:46:51.304Z",
+      "searchScore": 21.778917,
+      "package": {
+        "name": "array-lite",
+        "keywords": ["Array", "Utilitiy", "Pure", "Standalone"],
+        "version": "0.2.0",
+        "description": "Tiny array utility which emphases functional-style and does not access the global object",
+        "sanitized_name": "array-lite",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2021-12-09T10:56:01.111Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/array-lite",
+          "repository": "git+https://github.com/lachrist/array-lite.git",
+          "bugs": "https://github.com/lachrist/array-lite/issues",
+          "npm": "https://www.npmjs.com/package/array-lite"
+        }
+      },
+      "score": {
+        "final": 21.778917,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 109, "weekly": 5 },
+      "dependents": 1,
+      "updated": "2025-05-19T20:13:03.354Z",
+      "searchScore": 21.478754,
+      "package": {
+        "name": "melf-share",
+        "keywords": [
+          "Sharing",
+          "Serialize",
+          "Instantatiate",
+          "Far References",
+          "Melf",
+          "Synchronous",
+          "Asynchronous"
+        ],
+        "version": "0.1.12",
+        "description": "(A)Synchronous remote references based on http://npmjs.com/melf",
+        "sanitized_name": "melf-share",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2019-05-20T17:16:01.468Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/melf-share",
+          "repository": "git+https://github.com/lachrist/melf-share.git",
+          "bugs": "https://github.com/lachrist/melf-share/issues",
+          "npm": "https://www.npmjs.com/package/melf-share"
+        }
+      },
+      "score": {
+        "final": 21.478754,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 86, "weekly": 29 },
+      "dependents": 3,
+      "updated": "2025-05-18T15:31:11.541Z",
+      "searchScore": 21.38422,
+      "package": {
+        "name": "virtual-proxy",
+        "keywords": ["Proxy", "Virtual", "Invariants"],
+        "version": "0.3.1",
+        "description": "More permisive proxy objects by separating invariant bookkeeping from the target object.",
+        "sanitized_name": "virtual-proxy",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2025-02-09T14:22:12.983Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/virtual-proxy",
+          "repository": "git+https://github.com/lachrist/virtual-proxy.git",
+          "bugs": "https://github.com/lachrist/virtual-proxy/issues",
+          "npm": "https://www.npmjs.com/package/virtual-proxy"
+        }
+      },
+      "score": {
+        "final": 21.38422,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 58, "weekly": 1 },
+      "dependents": 1,
+      "updated": "2025-05-21T22:27:53.007Z",
+      "searchScore": 18.979038,
+      "package": {
+        "name": "sandbox-spawner",
+        "keywords": ["Process", "Spawn", "Browser"],
+        "version": "0.0.20",
+        "description": "Spawn processes in the browser, the node way",
+        "sanitized_name": "sandbox-spawner",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2019-01-09T17:00:15.909Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/sandbox-spawner#readme",
+          "repository": "git+https://github.com/lachrist/sandbox-spawner.git",
+          "bugs": "https://github.com/lachrist/sandbox-spawner/issues",
+          "npm": "https://www.npmjs.com/package/sandbox-spawner"
+        }
+      },
+      "score": {
+        "final": 18.979038,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 50, "weekly": 0 },
+      "dependents": 1,
+      "updated": "2025-05-21T22:28:12.148Z",
+      "searchScore": 18.180521,
+      "package": {
+        "name": "aran-access",
+        "keywords": [
+          "Aran",
+          "JavaScript",
+          "Access Control System",
+          "Membrane",
+          "Instrumentation",
+          "Dynamic Analysis",
+          "Shadow Execution"
+        ],
+        "version": "0.1.9",
+        "description": "Access Control System for http://npmjs.com/aran",
+        "sanitized_name": "aran-access",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2019-01-25T12:47:06.766Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/aran-access",
+          "repository": "git+https://github.com/lachrist/aran-access.git",
+          "bugs": "https://github.com/lachrist/aran-access/issues",
+          "npm": "https://www.npmjs.com/package/aran-access"
+        }
+      },
+      "score": {
+        "final": 18.180521,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 47, "weekly": 19 },
+      "dependents": 1,
+      "updated": "2025-05-20T05:31:20.070Z",
+      "searchScore": 17.978153,
+      "package": {
+        "name": "estree-sentry",
+        "keywords": [
+          "estree",
+          "sentry",
+          "guard",
+          "validate",
+          "typecheck",
+          "escmascript",
+          "typescript",
+          "annotation"
+        ],
+        "version": "0.4.1",
+        "description": "A more precise [ESTree](https://github.com/estree/estree) type with support for generic annotations.",
+        "sanitized_name": "estree-sentry",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2024-10-05T07:51:14.872Z",
+        "links": { "npm": "https://www.npmjs.com/package/estree-sentry" }
+      },
+      "score": {
+        "final": 17.978153,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 55, "weekly": 1 },
+      "dependents": 3,
+      "updated": "2025-05-19T23:06:16.138Z",
+      "searchScore": 17.914568,
+      "package": {
+        "name": "sandbox-editor",
+        "keywords": ["CommonJS", "Sandbox", "Editor", "Ace", "Cloud9"],
+        "version": "0.0.19",
+        "description": "Edit JS file in the browser and execute them inside a sandbox environment",
+        "sanitized_name": "sandbox-editor",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2019-01-09T16:54:02.914Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/commonjs-editor#readme",
+          "repository": "git+https://github.com/lachrist/commonjs-editor.git",
+          "bugs": "https://github.com/lachrist/commonjs-editor/issues",
+          "npm": "https://www.npmjs.com/package/sandbox-editor"
+        }
+      },
+      "score": {
+        "final": 17.914568,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 44, "weekly": 5 },
+      "dependents": 0,
+      "updated": "2025-05-20T16:51:29.569Z",
+      "searchScore": 17.332436,
+      "package": {
+        "name": "esvisit",
+        "keywords": [
+          "JavaScript",
+          "Visitor",
+          "ECMAScript5",
+          "Statement",
+          "Expression"
+        ],
+        "version": "0.1.1",
+        "description": "Expression/Statement visitor for ECMAScript5 Mozilla ASTs",
+        "sanitized_name": "esvisit",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2015-07-07T12:15:21.388Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/esvisit",
+          "repository": "git+https://github.com/lachrist/esvisit.git",
+          "bugs": "https://github.com/lachrist/esvisit/issues",
+          "npm": "https://www.npmjs.com/package/esvisit"
+        }
+      },
+      "score": {
+        "final": 17.332436,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 44, "weekly": 15 },
+      "dependents": 0,
+      "updated": "2025-05-20T19:22:40.422Z",
+      "searchScore": 17.332436,
+      "package": {
+        "name": "test-turtle",
+        "keywords": ["test", "runner", "memoization", "coverage", "c8"],
+        "version": "5.1.1",
+        "description": "This package a simple language-agnostic test runner which uses memoization based on file dependency information provided by the user. The problem that this package is trying to solve is avoiding to re-test files that are known to be unaffected by a change",
+        "sanitized_name": "test-turtle",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-01-19T16:55:40.059Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/test-turtle#readme",
+          "repository": "git+https://github.com/lachrist/test-turtle.git",
+          "bugs": "https://github.com/lachrist/test-turtle/issues",
+          "npm": "https://www.npmjs.com/package/test-turtle"
+        }
+      },
+      "score": {
+        "final": 17.332436,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 43, "weekly": 1 },
+      "dependents": 0,
+      "updated": "2025-05-20T00:47:02.903Z",
+      "searchScore": 16.650412,
+      "package": {
+        "name": "@appland/cli",
+        "keywords": [],
+        "version": "1.5.2",
+        "sanitized_name": "@appland/cli",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2021-08-04T19:42:18.410Z",
+        "links": { "npm": "https://www.npmjs.com/package/@appland/cli" }
+      },
+      "score": {
+        "final": 16.650412,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 32, "weekly": 19 },
+      "dependents": 0,
+      "updated": "2025-05-20T08:06:36.154Z",
+      "searchScore": 15.924086,
+      "package": {
+        "name": "@appland/sqlite-parser",
+        "keywords": ["sql", "sqlite", "parser", "syntax", "ast"],
+        "version": "1.1.0",
+        "description": "JavaScript implementation of SQLite 3 query parser",
+        "sanitized_name": "@appland/sqlite-parser",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2021-12-09T15:45:25.529Z",
+        "links": {
+          "homepage": "https://github.com/applandinc/sqlite-parser#readme",
+          "repository": "git+ssh://git@github.com/applandinc/sqlite-parser.git",
+          "bugs": "https://github.com/applandinc/sqlite-parser/issues",
+          "npm": "https://www.npmjs.com/package/@appland/sqlite-parser"
+        }
+      },
+      "score": {
+        "final": 15.924086,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 33, "weekly": 1 },
+      "dependents": 0,
+      "updated": "2025-05-20T17:12:46.923Z",
+      "searchScore": 15.821721,
+      "package": {
+        "name": "sandbox-scenario",
+        "keywords": [
+          "Demonstrate",
+          "Inter-process",
+          "Communication",
+          "Browser"
+        ],
+        "version": "0.0.13",
+        "description": "Demonstrate JavaScript projects on the browser",
+        "sanitized_name": "sandbox-scenario",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2019-01-09T17:02:06.882Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/sandbox-scenario#readme",
+          "repository": "git+https://github.com/lachrist/sandbox-scenario.git",
+          "bugs": "https://github.com/lachrist/sandbox-scenario/issues",
+          "npm": "https://www.npmjs.com/package/sandbox-scenario"
+        }
+      },
+      "score": {
+        "final": 15.821721,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 27, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-20T12:22:15.341Z",
+      "searchScore": 15.710703,
+      "package": {
+        "name": "mariaws",
+        "keywords": ["Web Socket", "MariaDB"],
+        "version": "0.1.2",
+        "description": "A simple Web Socket server for communicating with a MariaDB server.",
+        "sanitized_name": "mariaws",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2014-12-01T08:10:12.096Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/mariaws",
+          "npm": "https://www.npmjs.com/package/mariaws"
+        }
+      },
+      "score": {
+        "final": 15.710703,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 33, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-21T01:56:50.437Z",
+      "searchScore": 15.70146,
+      "package": {
+        "name": "testrumenter",
+        "keywords": ["Test", "JavaScript", "Instrumenter"],
+        "version": "0.0.15",
+        "description": "Command-line utility to test JavaScript code instrumenter",
+        "sanitized_name": "testrumenter",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2018-12-03T12:58:15.939Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/testrumenter",
+          "repository": "git+https://github.com/lachrist/testrumenter.git",
+          "bugs": "https://github.com/lachrist/testrumenter/issues",
+          "npm": "https://www.npmjs.com/package/testrumenter"
+        }
+      },
+      "score": {
+        "final": 15.70146,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 25, "weekly": 3 },
+      "dependents": 0,
+      "updated": "2025-05-19T19:02:50.812Z",
+      "searchScore": 14.847573,
+      "package": {
+        "name": "html-to-latex-listing",
+        "keywords": [],
+        "version": "0.3.2",
+        "description": "Convert code highlighted as html to LaTex listings. This library only works on a small subset of html, but it is sufficient to handle the output of \"Copy With Highlighting\" and \"Paste as Html\" from VSCode. Note that background color is not preserved.",
+        "sanitized_name": "html-to-latex-listing",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2024-09-19T14:53:55.134Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/html-to-latex-listing"
+        }
+      },
+      "score": {
+        "final": 14.847573,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 23, "weekly": 1 },
+      "dependents": 0,
+      "updated": "2025-05-21T22:21:54.478Z",
+      "searchScore": 14.093831,
+      "package": {
+        "name": "aran-remote",
+        "keywords": ["Remote", "Aran", "Instrumentation", "Distributed"],
+        "version": "0.3.8",
+        "description": "Deploy local Aran advices on remote processes",
+        "sanitized_name": "aran-remote",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2019-08-01T13:17:39.270Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/aran-remote",
+          "repository": "git+https://github.com/lachrist/aran-remote.git",
+          "bugs": "https://github.com/lachrist/aran-remote/issues",
+          "npm": "https://www.npmjs.com/package/aran-remote"
+        }
+      },
+      "score": {
+        "final": 14.093831,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 24, "weekly": 1 },
+      "dependents": 0,
+      "updated": "2025-05-21T04:16:14.899Z",
+      "searchScore": 14.070798,
+      "package": {
+        "name": "@bercow/core",
+        "keywords": ["test", "runner", "memoization", "ordering"],
+        "version": "0.2.0",
+        "description": "cf [../../README.md](../../README.md)",
+        "sanitized_name": "@bercow/core",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-09-30T13:44:45.475Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/bercow#readme",
+          "repository": "git+https://github.com/lachrist/bercow.git",
+          "bugs": "https://github.com/lachrist/bercow/issues",
+          "npm": "https://www.npmjs.com/package/@bercow/core"
+        }
+      },
+      "score": {
+        "final": 14.070798,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 23, "weekly": 2 },
+      "dependents": 0,
+      "updated": "2025-05-20T19:42:38.188Z",
+      "searchScore": 13.961764,
+      "package": {
+        "name": "@appland/appmap-swagger",
+        "keywords": ["swagger", "appmap", "openapi"],
+        "version": "0.4.0",
+        "description": "Generate Swagger (OpenAPI) documentation from AppMaps",
+        "sanitized_name": "@appland/appmap-swagger",
+        "publisher": {
+          "email": "dustinsbyrne@gmail.com",
+          "username": "dustinbyrne"
+        },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" }
+        ],
+        "license": "MIT",
+        "date": "2021-05-13T17:24:37.110Z",
+        "links": {
+          "homepage": "https://github.com/applandinc/appmap-swagger#readme",
+          "repository": "git+ssh://git@github.com/applandinc/appmap-swagger.git",
+          "bugs": "https://github.com/applandinc/appmap-swagger/issues",
+          "npm": "https://www.npmjs.com/package/@appland/appmap-swagger"
+        }
+      },
+      "score": {
+        "final": 13.961764,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 20, "weekly": 9 },
+      "dependents": 3,
+      "updated": "2025-05-19T19:21:55.523Z",
+      "searchScore": 13.679282,
+      "package": {
+        "name": "toggle-widget",
+        "keywords": ["Toggle", "Button", "Widget"],
+        "version": "0.0.3",
+        "description": "Toggle button widget",
+        "sanitized_name": "toggle-widget",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2017-10-07T09:23:52.902Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/toggle-widget#readme",
+          "repository": "git+https://github.com/lachrist/toggle-widget.git",
+          "bugs": "https://github.com/lachrist/toggle-widget/issues",
+          "npm": "https://www.npmjs.com/package/toggle-widget"
+        }
+      },
+      "score": {
+        "final": 13.679282,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 22, "weekly": 0 },
+      "dependents": 2,
+      "updated": "2025-05-19T20:57:18.472Z",
+      "searchScore": 13.288747,
+      "package": {
+        "name": "stdio-widget",
+        "keywords": [
+          "Terminal",
+          "Console",
+          "Emulator",
+          "Browser",
+          "Browserify",
+          "Widget"
+        ],
+        "version": "0.0.10",
+        "description": "Emulate terminals on the browser, works with nodejs streams",
+        "sanitized_name": "stdio-widget",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2018-02-14T12:11:46.416Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/stdio-widget#readme",
+          "repository": "git+https://github.com/lachrist/stdio-widget.git",
+          "bugs": "https://github.com/lachrist/stdio-widget/issues",
+          "npm": "https://www.npmjs.com/package/stdio-widget"
+        }
+      },
+      "score": {
+        "final": 13.288747,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 17, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-20T09:22:45.843Z",
+      "searchScore": 13.226406,
+      "package": {
+        "name": "maevar",
+        "keywords": ["edit", "encryption", "security", "openssl", "vim", "srm"],
+        "version": "0.2.0",
+        "description": "A simple command-line tool to edit encrypted files",
+        "sanitized_name": "maevar",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2018-08-17T09:19:38.471Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/maevar",
+          "repository": "git+https://github.com/lachrist/maevar.git",
+          "bugs": "https://github.com/lachrist/maevar/issues",
+          "npm": "https://www.npmjs.com/package/maevar"
+        }
+      },
+      "score": {
+        "final": 13.226406,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 19, "weekly": 4 },
+      "dependents": 0,
+      "updated": "2025-05-19T20:22:46.741Z",
+      "searchScore": 12.57465,
+      "package": {
+        "name": "oghma",
+        "keywords": [
+          "Citation",
+          "Google scholar",
+          "Scraper",
+          "Transitive closure"
+        ],
+        "version": "1.0.0",
+        "description": "Oghma (responsibly) scrapes citation graphs from google-scholar",
+        "sanitized_name": "oghma",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2017-01-10T16:34:50.245Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/oghma",
+          "repository": "git+https://github.com/lachrist/oghma.git",
+          "bugs": "https://github.com/lachrist/oghma/issues",
+          "npm": "https://www.npmjs.com/package/oghma"
+        }
+      },
+      "score": {
+        "final": 12.57465,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 17, "weekly": 1 },
+      "dependents": 0,
+      "updated": "2025-05-21T03:01:30.266Z",
+      "searchScore": 12.350136,
+      "package": {
+        "name": "browsersql",
+        "keywords": ["Browser", "SQL", "Toolkit"],
+        "version": "0.0.1",
+        "description": "A simple JavaScript toolkit for constructing web pages accessing a SQL database.",
+        "sanitized_name": "browsersql",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2014-12-21T21:56:23.621Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/browsersql",
+          "npm": "https://www.npmjs.com/package/browsersql"
+        }
+      },
+      "score": {
+        "final": 12.350136,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 16, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-20T17:32:02.958Z",
+      "searchScore": 12.145854,
+      "package": {
+        "name": "aran-live",
+        "keywords": ["Aran", "Live", "API"],
+        "version": "0.0.1",
+        "description": "Simpler live API for Aran",
+        "sanitized_name": "aran-live",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2018-06-06T15:08:52.648Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/aran-live",
+          "repository": "git+https://github.com/lachrist/aran-live.git",
+          "bugs": "https://github.com/lachrist/aran-live/issues",
+          "npm": "https://www.npmjs.com/package/aran-live"
+        }
+      },
+      "score": {
+        "final": 12.145854,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 16, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-21T02:31:28.393Z",
+      "searchScore": 12.053534,
+      "package": {
+        "name": "aran-access-control",
+        "keywords": [
+          "Aran",
+          "JavaScript",
+          "Access Control System",
+          "Membrane",
+          "Instrumentation",
+          "Dynamic Analysis",
+          "Shadow Execution"
+        ],
+        "version": "0.0.0",
+        "description": "Access Control System for Aran",
+        "sanitized_name": "aran-access-control",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2018-06-04T09:48:39.476Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/aran-access-control",
+          "repository": "git+https://github.com/lachrist/aran-access-control.git",
+          "bugs": "https://github.com/lachrist/aran-access-control/issues",
+          "npm": "https://www.npmjs.com/package/aran-access-control"
+        }
+      },
+      "score": {
+        "final": 12.053534,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 15, "weekly": 3 },
+      "dependents": 0,
+      "updated": "2025-05-20T07:27:21.530Z",
+      "searchScore": 12.02825,
+      "package": {
+        "name": "print-lite",
+        "keywords": ["Print", "JavaScript", "Value", "Tiny"],
+        "version": "0.0.1",
+        "description": "Print JavaScript values, truncated and on a single line",
+        "sanitized_name": "print-lite",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2018-03-01T11:20:50.042Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/print-lite",
+          "repository": "git+https://github.com/lachrist/aran.git",
+          "bugs": "https://github.com/lachrist/aran/issues",
+          "npm": "https://www.npmjs.com/package/print-lite"
+        }
+      },
+      "score": {
+        "final": 12.02825,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 14, "weekly": 2 },
+      "dependents": 0,
+      "updated": "2025-05-19T17:11:31.650Z",
+      "searchScore": 11.862597,
+      "package": {
+        "name": "@bercow/eslint",
+        "keywords": ["bercow", "plugin", "lint", "eslint"],
+        "version": "0.1.0",
+        "description": "Lint plugin for the [bercow](https://github.com/lachrist/bercow) test runner based on [eslint](https://github.com/eslint/eslint).",
+        "sanitized_name": "@bercow/eslint",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-09-30T13:44:50.747Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/bercow#readme",
+          "repository": "git+https://github.com/lachrist/bercow.git",
+          "bugs": "https://github.com/lachrist/bercow/issues",
+          "npm": "https://www.npmjs.com/package/@bercow/eslint"
+        }
+      },
+      "score": {
+        "final": 11.862597,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 13, "weekly": 2 },
+      "dependents": 0,
+      "updated": "2025-05-20T12:36:51.291Z",
+      "searchScore": 11.837615,
+      "package": {
+        "name": "prologjs",
+        "keywords": ["Prolog", "Declarative programming", "Iterator"],
+        "version": "0.0.1",
+        "description": "Tiny Prolog interpreter (< 80 LoC)",
+        "sanitized_name": "prologjs",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2016-05-12T14:11:36.326Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/prologjs",
+          "repository": "git+https://github.com/lachrist/prologjs.git",
+          "bugs": "https://github.com/lachrist/prologjs/issues",
+          "npm": "https://www.npmjs.com/package/prologjs"
+        }
+      },
+      "score": {
+        "final": 11.837615,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 15, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-20T17:41:47.600Z",
+      "searchScore": 11.829893,
+      "package": {
+        "name": "channel-uniform",
+        "keywords": ["Request", "HTTP", "WebSocket"],
+        "version": "0.0.2",
+        "description": "Uniform API for performing http(s) request and opening websockets",
+        "sanitized_name": "channel-uniform",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2017-05-31T06:58:48.022Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/request-uniform#readme",
+          "repository": "git+https://github.com/lachrist/request-uniform.git",
+          "bugs": "https://github.com/lachrist/request-uniform/issues",
+          "npm": "https://www.npmjs.com/package/channel-uniform"
+        }
+      },
+      "score": {
+        "final": 11.829893,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 14, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-21T18:47:18.662Z",
+      "searchScore": 11.603501,
+      "package": {
+        "name": "candlekeep",
+        "keywords": [
+          "JavaScript",
+          "Reimplementation",
+          "Built-in",
+          "ECMAScript6",
+          "Specification"
+        ],
+        "version": "0.0.0",
+        "description": "Reimplement many JavaScript built-in functions in JavaScript itself",
+        "sanitized_name": "candlekeep",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2015-06-02T11:56:54.495Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/candlekeep",
+          "repository": "git+https://github.com/lachrist/candlekeep.git",
+          "bugs": "https://github.com/lachrist/candlekeep/issues",
+          "npm": "https://www.npmjs.com/package/candlekeep"
+        }
+      },
+      "score": {
+        "final": 11.603501,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 14, "weekly": 3 },
+      "dependents": 0,
+      "updated": "2025-05-21T22:27:44.179Z",
+      "searchScore": 11.603501,
+      "package": {
+        "name": "forgiving-splits",
+        "keywords": [
+          "Chronometer",
+          "Splits",
+          "Laps",
+          "Forgiving",
+          "Deviation",
+          "Mean"
+        ],
+        "version": "0.0.0",
+        "description": "Command line utility to infer ",
+        "sanitized_name": "forgiving-splits",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2017-07-19T06:59:48.335Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/forgiving-splits",
+          "repository": "git+https://github.com/lachrist/forgiving-splits.git",
+          "bugs": "https://github.com/lachrist/forgiving-splits/issues",
+          "npm": "https://www.npmjs.com/package/forgiving-splits"
+        }
+      },
+      "score": {
+        "final": 11.603501,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 14, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-20T19:06:26.917Z",
+      "searchScore": 11.494771,
+      "package": {
+        "name": "aran-lite",
+        "keywords": ["Aran", "Otiluke", "Node", "Browser"],
+        "version": "0.0.4",
+        "description": "Aran and Otiluke, integrated.",
+        "sanitized_name": "aran-lite",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2018-06-25T08:57:13.411Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/aran-lite",
+          "repository": "git+https://github.com/lachrist/aran-lite.git",
+          "bugs": "https://github.com/lachrist/aran-lite/issues",
+          "npm": "https://www.npmjs.com/package/aran-lite"
+        }
+      },
+      "score": {
+        "final": 11.494771,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 13, "weekly": 1 },
+      "dependents": 0,
+      "updated": "2025-05-20T08:26:45.734Z",
+      "searchScore": 11.324769,
+      "package": {
+        "name": "yasl",
+        "keywords": ["JavaScript", "Module", "Compiler"],
+        "version": "0.0.2",
+        "description": "A simple JavaScript compiler for managing dependencies between JavaScript files.",
+        "sanitized_name": "yasl",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2014-12-15T18:59:33.257Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/yasl",
+          "npm": "https://www.npmjs.com/package/yasl"
+        }
+      },
+      "score": {
+        "final": 11.324769,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 13, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-21T19:01:53.938Z",
+      "searchScore": 11.24337,
+      "package": {
+        "name": "glitterdust",
+        "keywords": [
+          "JavaScript",
+          "Instrumentation",
+          "Benchmark",
+          "Test",
+          "Demonstration"
+        ],
+        "version": "0.0.1",
+        "description": "Glitterdust is a tool to test and benchmark JavaScript instrumenters",
+        "sanitized_name": "glitterdust",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2016-02-02T10:19:07.456Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/glitterdust",
+          "repository": "git+https://github.com/lachrist/glitterdust.git",
+          "bugs": "https://github.com/lachrist/glitterdust/issues",
+          "npm": "https://www.npmjs.com/package/glitterdust"
+        }
+      },
+      "score": {
+        "final": 11.24337,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 13, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-20T18:57:36.014Z",
+      "searchScore": 11.138014,
+      "package": {
+        "name": "@appland/diagrams-old",
+        "keywords": ["d3", "diagram", "appmap", "uml"],
+        "version": "0.6.0",
+        "description": "Diagrams for visualizations of appland.org data",
+        "sanitized_name": "@appland/diagrams-old",
+        "publisher": {
+          "email": "release@app.land",
+          "username": "appland-release"
+        },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+          { "email": "release@app.land", "username": "appland-release" },
+          { "email": "dustinsbyrne@gmail.com", "username": "dustinbyrne" },
+          { "email": "kevin.gilpin@alum.mit.edu", "username": "kgilpin" }
+        ],
+        "license": "MIT",
+        "date": "2021-06-23T20:43:45.398Z",
+        "links": {
+          "homepage": "https://github.com/applandinc/diagrams-js",
+          "repository": "git+https://github.com/applandinc/diagrams-js.git",
+          "bugs": "https://github.com/applandinc/diagrams-js/issues",
+          "npm": "https://www.npmjs.com/package/@appland/diagrams-old"
+        }
+      },
+      "score": {
+        "final": 11.138014,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 14, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-19T20:58:11.375Z",
+      "searchScore": 11.120406,
+      "package": {
+        "name": "antena-spawn",
+        "keywords": ["Antena", "Spawn", "Process"],
+        "version": "0.1.2",
+        "description": "Uniformely spawn processes with an antena connection",
+        "sanitized_name": "antena-spawn",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2017-10-09T15:18:16.859Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/antena-spawn#readme",
+          "repository": "git+https://github.com/lachrist/antena-spawn.git",
+          "bugs": "https://github.com/lachrist/antena-spawn/issues",
+          "npm": "https://www.npmjs.com/package/antena-spawn"
+        }
+      },
+      "score": {
+        "final": 11.120406,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 13, "weekly": 1 },
+      "dependents": 1,
+      "updated": "2025-05-19T23:21:16.031Z",
+      "searchScore": 10.775269,
+      "package": {
+        "name": "web-recall-toolkit",
+        "keywords": ["Toolkit", "jQuery", "Browser", "Permanent", "Storage"],
+        "version": "0.0.0",
+        "description": "A small toolkit for creating accessors to permanent browser data.",
+        "sanitized_name": "web-recall-toolkit",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2015-10-20T14:07:27.050Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/web-recall-toolkit",
+          "npm": "https://www.npmjs.com/package/web-recall-toolkit"
+        }
+      },
+      "score": {
+        "final": 10.775269,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 13, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-20T02:31:25.519Z",
+      "searchScore": 10.775269,
+      "package": {
+        "name": "bercow-c8",
+        "keywords": ["bercow", "plugin", "test", "coverage", "c8"],
+        "version": "0.0.1",
+        "description": "Test plugin for the [bercow](https://github.com/lachrist/bercow) test runner based [c8](https://github.com/bcoe/c8).",
+        "sanitized_name": "bercow-c8",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-09-06T19:11:48.808Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/bercow-c8#readme",
+          "repository": "git+https://github.com/lachrist/bercow-c8.git",
+          "bugs": "https://github.com/lachrist/bercow-c8/issues",
+          "npm": "https://www.npmjs.com/package/bercow-c8"
+        }
+      },
+      "score": {
+        "final": 10.775269,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 11, "weekly": 1 },
+      "dependents": 0,
+      "updated": "2025-05-19T16:33:01.686Z",
+      "searchScore": 10.678077,
+      "package": {
+        "name": "bin-sample",
+        "keywords": [],
+        "version": "0.0.0",
+        "description": "Prints `process.argv` with executables with different extensions.",
+        "sanitized_name": "bin-sample",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-01-03T12:51:51.613Z",
+        "links": { "npm": "https://www.npmjs.com/package/bin-sample" }
+      },
+      "score": {
+        "final": 10.678077,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 11, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-19T18:03:44.523Z",
+      "searchScore": 10.678077,
+      "package": {
+        "name": "bercow-link-adjacent",
+        "keywords": ["bercow", "plugin", "link"],
+        "version": "0.0.1",
+        "description": "Plugin for the [bercow](https://github.com/lachrist/bercow) test runner which links a test file to its main file. This plugin works for projects whose test files sits next to their main file with an additional extension.",
+        "sanitized_name": "bercow-link-adjacent",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-09-06T16:33:47.753Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/bercow-link-adjacent#readme",
+          "repository": "git+https://github.com/lachrist/bercow-link-adjacent.git",
+          "bugs": "https://github.com/lachrist/bercow-link-adjacent/issues",
+          "npm": "https://www.npmjs.com/package/bercow-link-adjacent"
+        }
+      },
+      "score": {
+        "final": 10.678077,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 12, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-21T06:27:58.501Z",
+      "searchScore": 10.674873,
+      "package": {
+        "name": "bercow-order-esm-import",
+        "keywords": ["bercow", "plugin", "lint", "import", "order"],
+        "version": "0.1.1",
+        "description": "Lint plugin for the [bercow](https://github.com/lachrist/bercow) test runner based which enforces import ordering on native modules. Node modules should be first, then external modules, then internal modules. The ordering of internal module follows bercow",
+        "sanitized_name": "bercow-order-esm-import",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-09-08T05:43:56.074Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/bercow-order-esm-import#readme",
+          "repository": "git+https://github.com/lachrist/bercow-order-esm-import.git",
+          "bugs": "https://github.com/lachrist/bercow-order-esm-import/issues",
+          "npm": "https://www.npmjs.com/package/bercow-order-esm-import"
+        }
+      },
+      "score": {
+        "final": 10.674873,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 12, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-19T20:37:14.792Z",
+      "searchScore": 10.406309,
+      "package": {
+        "name": "volothamp",
+        "keywords": ["Pomodoro", "Work management"],
+        "version": "0.0.6",
+        "description": "Volothamp is a work management tool inspired by the pomodoro technique",
+        "sanitized_name": "volothamp",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2016-08-22T14:28:32.742Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/volothamp",
+          "repository": "git+https://github.com/lachrist/volothamp.git",
+          "bugs": "https://github.com/lachrist/volothamp/issues",
+          "npm": "https://www.npmjs.com/package/volothamp"
+        }
+      },
+      "score": {
+        "final": 10.406309,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 11, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-20T18:51:38.525Z",
+      "searchScore": 10.346979,
+      "package": {
+        "name": "@bercow/order-esm-import",
+        "keywords": ["bercow", "plugin", "lint", "import", "order"],
+        "version": "0.1.0",
+        "description": "Lint plugin for the [bercow](https://github.com/lachrist/bercow) test runner based which enforces import ordering on native modules. Node modules should be first, then external modules, then internal modules. The ordering of internal module follows bercow",
+        "sanitized_name": "@bercow/order-esm-import",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-09-30T13:44:56.236Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/bercow#readme",
+          "repository": "git+https://github.com/lachrist/bercow.git",
+          "bugs": "https://github.com/lachrist/bercow/issues",
+          "npm": "https://www.npmjs.com/package/@bercow/order-esm-import"
+        }
+      },
+      "score": {
+        "final": 10.346979,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 11, "weekly": 1 },
+      "dependents": 0,
+      "updated": "2025-05-20T23:56:21.177Z",
+      "searchScore": 10.346979,
+      "package": {
+        "name": "bercow-prettier",
+        "keywords": ["bercow", "plugin", "lint", "prettier", "format"],
+        "version": "0.0.1",
+        "description": "Lint plugin for the [bercow](https://github.com/lachrist/bercow) test runner based on [prettier](https://github.com/prettier/prettier).",
+        "sanitized_name": "bercow-prettier",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-09-06T17:13:30.133Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/bercow-prettier#readme",
+          "repository": "git+https://github.com/lachrist/bercow-prettier.git",
+          "bugs": "https://github.com/lachrist/bercow-prettier/issues",
+          "npm": "https://www.npmjs.com/package/bercow-prettier"
+        }
+      },
+      "score": {
+        "final": 10.346979,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 11, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-21T09:23:05.874Z",
+      "searchScore": 10.268332,
+      "package": {
+        "name": "@bercow/prettier",
+        "keywords": ["bercow", "plugin", "lint", "prettier", "format"],
+        "version": "0.1.0",
+        "description": "Lint plugin for the [bercow](https://github.com/lachrist/bercow) test runner based on [prettier](https://github.com/prettier/prettier).",
+        "sanitized_name": "@bercow/prettier",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-09-30T13:44:57.715Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/bercow#readme",
+          "repository": "git+https://github.com/lachrist/bercow.git",
+          "bugs": "https://github.com/lachrist/bercow/issues",
+          "npm": "https://www.npmjs.com/package/@bercow/prettier"
+        }
+      },
+      "score": {
+        "final": 10.268332,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 10, "weekly": 0 },
+      "dependents": 1,
+      "updated": "2025-05-21T15:43:00.772Z",
+      "searchScore": 10.125121,
+      "package": {
+        "name": "parsecjs",
+        "keywords": ["Parsec", "Parser combinator", "Monad"],
+        "version": "0.0.2",
+        "description": "Parsec-inspired parser library",
+        "sanitized_name": "parsecjs",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2016-05-12T14:09:54.145Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/parsecjs",
+          "repository": "git+https://github.com/lachrist/parsecjs.git",
+          "bugs": "https://github.com/lachrist/parsecjs/issues",
+          "npm": "https://www.npmjs.com/package/parsecjs"
+        }
+      },
+      "score": {
+        "final": 10.125121,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 10, "weekly": 1 },
+      "dependents": 0,
+      "updated": "2025-05-20T08:22:27.683Z",
+      "searchScore": 10.07059,
+      "package": {
+        "name": "drizzt",
+        "keywords": [],
+        "version": "0.0.0",
+        "description": "Distributed Dynamic Analysis",
+        "sanitized_name": "drizzt",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2017-05-11T14:42:27.865Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/drizzt",
+          "repository": "git+https://github.com/lachrist/drizzt.git",
+          "bugs": "https://github.com/lachrist/drizzt/issues",
+          "npm": "https://www.npmjs.com/package/drizzt"
+        }
+      },
+      "score": {
+        "final": 10.07059,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 10, "weekly": 0 },
+      "dependents": 1,
+      "updated": "2025-05-21T09:41:41.368Z",
+      "searchScore": 9.829233,
+      "package": {
+        "name": "list-lang",
+        "keywords": ["list", "language", "serialization", "data"],
+        "version": "0.1.0",
+        "description": "List language to parse and serialize lists with configurable bullets.",
+        "sanitized_name": "list-lang",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2021-12-25T15:25:12.995Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/list-lang#readme",
+          "repository": "git+https://github.com/lachrist/list-lang.git",
+          "bugs": "https://github.com/lachrist/list-lang/issues",
+          "npm": "https://www.npmjs.com/package/list-lang"
+        }
+      },
+      "score": {
+        "final": 9.829233,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 9, "weekly": 1 },
+      "dependents": 0,
+      "updated": "2025-05-21T11:52:41.398Z",
+      "searchScore": 9.633426,
+      "package": {
+        "name": "stdio-gui",
+        "keywords": ["Terminal", "Console", "Emulator", "Browser"],
+        "version": "0.0.0",
+        "description": "Terminal emulator for browsers",
+        "sanitized_name": "stdio-gui",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2017-09-26T15:33:11.988Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/std-gui#readme",
+          "repository": "git+https://github.com/lachrist/std-gui.git",
+          "bugs": "https://github.com/lachrist/std-gui/issues",
+          "npm": "https://www.npmjs.com/package/stdio-gui"
+        }
+      },
+      "score": {
+        "final": 9.633426,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 9, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-21T20:42:01.635Z",
+      "searchScore": 9.512673,
+      "package": {
+        "name": "@bercow/link-separate",
+        "keywords": ["bercow", "plugin", "link"],
+        "version": "0.1.0",
+        "description": "Link plugin for the [bercow](https://github.com/lachrist/bercow) test runner which links a test file to its main file. This plugin works for projects whose test files sit in a separate directory that mirrors the structure of the source directory.",
+        "sanitized_name": "@bercow/link-separate",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-09-30T13:44:54.297Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/bercow#readme",
+          "repository": "git+https://github.com/lachrist/bercow.git",
+          "bugs": "https://github.com/lachrist/bercow/issues",
+          "npm": "https://www.npmjs.com/package/@bercow/link-separate"
+        }
+      },
+      "score": {
+        "final": 9.512673,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 8, "weekly": 1 },
+      "dependents": 0,
+      "updated": "2025-05-20T11:07:00.771Z",
+      "searchScore": 9.455496,
+      "package": {
+        "name": "request-uniform",
+        "keywords": ["Request", "HTTP"],
+        "version": "0.0.0",
+        "description": "Uniform interface to send HTTP requests",
+        "sanitized_name": "request-uniform",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2017-04-06T09:06:52.563Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/request-uniform#readme",
+          "repository": "git+https://github.com/lachrist/request-uniform.git",
+          "bugs": "https://github.com/lachrist/request-uniform/issues",
+          "npm": "https://www.npmjs.com/package/request-uniform"
+        }
+      },
+      "score": {
+        "final": 9.455496,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 9, "weekly": 1 },
+      "dependents": 0,
+      "updated": "2025-05-19T23:22:09.503Z",
+      "searchScore": 9.116627,
+      "package": {
+        "name": "taskator",
+        "keywords": ["Task", "Manager"],
+        "version": "0.0.0",
+        "description": "Task manager",
+        "sanitized_name": "taskator",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2015-10-20T14:09:48.993Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/taskator",
+          "npm": "https://www.npmjs.com/package/taskator"
+        }
+      },
+      "score": {
+        "final": 9.116627,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 8, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-21T07:16:46.503Z",
+      "searchScore": 8.829054,
+      "package": {
+        "name": "@bercow/spawn",
+        "keywords": ["bercow", "plugin", "test", "child_process", "spawn"],
+        "version": "0.2.0",
+        "description": "Test plugin for the [bercow](https://github.com/lachrist/bercow) test runner which spawns a child process.",
+        "sanitized_name": "@bercow/spawn",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-09-30T13:44:59.333Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/bercow#readme",
+          "repository": "git+https://github.com/lachrist/bercow.git",
+          "bugs": "https://github.com/lachrist/bercow/issues",
+          "npm": "https://www.npmjs.com/package/@bercow/spawn"
+        }
+      },
+      "score": {
+        "final": 8.829054,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 8, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-19T22:32:41.638Z",
+      "searchScore": 8.606928,
+      "package": {
+        "name": "bercow-eslint",
+        "keywords": ["bercow", "plugin", "lint", "eslint"],
+        "version": "0.0.0",
+        "description": "Lint plugin for the [bercow](https://github.com/lachrist/bercow) test runner based on [eslint](https://github.com/eslint/eslint).",
+        "sanitized_name": "bercow-eslint",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-09-06T17:17:00.229Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/bercow-eslint#readme",
+          "repository": "git+https://github.com/lachrist/bercow-eslint.git",
+          "bugs": "https://github.com/lachrist/bercow-eslint/issues",
+          "npm": "https://www.npmjs.com/package/bercow-eslint"
+        }
+      },
+      "score": {
+        "final": 8.606928,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 7, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-22T00:07:37.760Z",
+      "searchScore": 8.39291,
+      "package": {
+        "name": "bercow-link-separate",
+        "keywords": ["bercow", "plugin", "link"],
+        "version": "0.0.0",
+        "description": "Plugin for the [bercow](https://github.com/lachrist/bercow) test runner which links a test file to its main file. This plugin works for projects whose test files sits in a separate directory that mirrors the structure of the source directory.",
+        "sanitized_name": "bercow-link-separate",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-09-06T16:31:05.197Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/bercow-link-separate#readme",
+          "repository": "git+https://github.com/lachrist/bercow-link-separate.git",
+          "bugs": "https://github.com/lachrist/bercow-link-separate/issues",
+          "npm": "https://www.npmjs.com/package/bercow-link-separate"
+        }
+      },
+      "score": {
+        "final": 8.39291,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 7, "weekly": 0 },
+      "dependents": 0,
+      "updated": "2025-05-20T01:58:14.843Z",
+      "searchScore": 8.043483,
+      "package": {
+        "name": "@bercow/link-adjacent",
+        "keywords": ["bercow", "plugin", "link"],
+        "version": "0.1.0",
+        "description": "Link plugin for the [bercow](https://github.com/lachrist/bercow) test runner which links a test file to its main file. This plugin works for projects whose test files sit next to their main file with an additional extension.",
+        "sanitized_name": "@bercow/link-adjacent",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "date": "2022-09-30T13:44:52.534Z",
+        "links": {
+          "homepage": "https://github.com/lachrist/bercow#readme",
+          "repository": "git+https://github.com/lachrist/bercow.git",
+          "bugs": "https://github.com/lachrist/bercow/issues",
+          "npm": "https://www.npmjs.com/package/@bercow/link-adjacent"
+        }
+      },
+      "score": {
+        "final": 8.043483,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    },
+    {
+      "downloads": { "monthly": 6, "weekly": 0 },
+      "dependents": 1,
+      "updated": "2025-05-20T16:52:25.032Z",
+      "searchScore": 7.663181,
+      "package": {
+        "name": "web-recall",
+        "keywords": ["localStorage", "Browser"],
+        "version": "0.0.0",
+        "description": "A thin layer on top of localStorage to better handle data races.",
+        "sanitized_name": "web-recall",
+        "publisher": { "email": "lachrist@vub.ac.be", "username": "lachrist" },
+        "maintainers": [
+          { "email": "lachrist@vub.ac.be", "username": "lachrist" }
+        ],
+        "license": "MIT",
+        "date": "2015-10-20T14:06:07.694Z",
+        "links": {
+          "homepage": "http://github.com/lachrist/web-recall",
+          "npm": "https://www.npmjs.com/package/web-recall"
+        }
+      },
+      "score": {
+        "final": 7.663181,
+        "detail": { "popularity": 1, "quality": 1, "maintenance": 1 }
+      },
+      "flags": { "insecure": 0 }
+    }
+  ],
+  "total": 79,
+  "time": "2025-05-22T10:04:44.506Z"
+}

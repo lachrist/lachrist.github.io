@@ -7,6 +7,14 @@
     "editor.autoIndent": "none",
     "editor.tabSize": 2
   },
+  "[latex]": {
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80,
+    "editor.wrappingIndent": "indent",
+    "editor.insertSpaces": true,
+    "editor.autoIndent": "none",
+    "editor.tabSize": 2,
+  },
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-assistant.openai": [
     {
