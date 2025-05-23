@@ -40,6 +40,8 @@
 \newcommand{\ItemSkip}[0]{4pt}
 \newcommand{\SubItemSkip}[0]{0pt}
 \newcommand{\SubSubItemSkip}[0]{0pt}
+\newcommand{\ToolCategory}[1]{\textbf{#1}}
+\newcommand{\Bullet}[0]{\faCaretRight~~}
 
 %%%%%%%%%%
 % Rubric %
@@ -50,10 +52,7 @@
 \newcommand{\BeginSubRubric}[0]{\vspace{6pt}}
 \newcommand{\EndSubRubric}[0]{\vspace{4pt}}
 
-\newcommand{\Rubric}[1]{%
-  \colorbox{gray!20}{\parbox{\linewidth}{\centering\sffamily\bfseries{}#1}}%
-  \vspace{12pt}%
-}
+\newcommand{\Rubric}[1]{\colorbox{gray!20}{\parbox{\linewidth}{\centering\sffamily\bfseries{}#1}}}
 
 \newcommand{\SubRubric}[1]{\parbox{\linewidth}{\sffamily\bfseries{}#1}}
 
@@ -116,35 +115,24 @@
 
 \begin{minipage}[t]{\LeftColumn}
 
-{\Huge\sffamily\bfseries Laurent} \\[0pt]
-
-{\Huge\sffamily\bfseries Christophe} \\[0pt]
-
-\vspace{8pt}
-
-{\Large Software Engineer} \\[0pt]
-
-\vspace{8pt}
-
-{\footnotesize\begin{tabular}[t]{@{}l@{\hspace{4pt}}l}
+{\Huge\sffamily\bfseries Laurent} \\[8pt]
+{\Huge\sffamily\bfseries Christophe} \\[8pt]
+{\Large Software Engineer} \\[8pt]
+{\footnotesize\begin{tabular}[t]{@{}l@{\hspace{4pt}}l@{}}
   \faEnvelope & \href{mailto:laurent.christophe.terken@gmail.com}{\texttt{laurent.christophe.terken@gmail.com}} \\[4pt]
   \faGlobe & \Link{https://lachrist.github.io} \\[4pt]
   \faGithub & \Link{https://github.com/lachrist} \\[4pt]
   \faLinkedin & \Link{https://www.linkedin.com/in/lachrist} \\[0pt]
 \end{tabular}}
 
-\EndRubric{}
-
-\Rubric{\faUser \quad ABOUT ME}
+\vspace{12pt}\Rubric{\faUser \quad ABOUT ME}\vspace{8pt}
 
 I'm Laurent Christophe, a consultant and Ph.D. student at the Vrije Universiteit Brussel (VUB). My dissertation is currently under review, and I expect to graduate this summer. I'm an enthusiastic programmer and a prolific contributor to open-source projects.
 
-\EndRubric{}
+\vspace{12pt}\Rubric{\faGraduationCap \quad EDUCATION}\vspace{8pt}
 
-\Rubric{\faGraduationCap \quad EDUCATION}
-
-\begin{tabular}{@{}l@{}l}
-\textcolor{gray}{\faCaretRight}~~ & \textcolor{gray}{Ph.D. in Computer Science} \\[\SubSubItemSkip]
+\begin{tabular}{@{}l@{}l@{}}
+\textcolor{gray}{\Bullet} & \textcolor{gray}{\textbf{Ph.D.} -- Computer Science} \\[\SubSubItemSkip]
 & \quad \textcolor{gray}{(under review)} \\[\SubItemSkip]
 & Vrije Universiteit Brussel \\[\SubItemSkip]
 & \emph{2012 -- Present} \\[\SubItemSkip]
@@ -154,47 +142,56 @@ I'm Laurent Christophe, a consultant and Ph.D. student at the Vrije Universiteit
 & \quad Managed Languages \\[\SubItemSkip]
 & Supervisors: \\[\SubSubItemSkip]
 & \quad Prof. Dr. Coen De Roover\\[\SubSubItemSkip]
-& \quad Prof. Dr. Wolfgang De Meuter\\[\EducationSkip]
-\faCaretRight~~ & MSc (Eng) -- Computer Science \\[\SubItemSkip]
+& \quad Prof. Dr. Wolfgang De Meuter\\[\ItemSkip]
+\Bullet & \textbf{MSc (Eng)} -- Computer Science \\[\SubItemSkip]
 & Université Libre de Bruxelles \\[\SubItemSkip]
 & \emph{2010 -- 2012} \\[\SubItemSkip]
 & Graduated with Great Distinction \\[\SubSubItemSkip]
-& \quad (Top 25\% of class) \\[\EducationSkip]
-\faCaretRight~~ & BSc (Eng) -- Civil Engineering \\[\SubItemSkip]
+& \quad (Top 25\% of class) \\[\ItemSkip]
+\Bullet & \textbf{BSc (Eng)} -- Civil Engineering \\[\SubItemSkip]
 & Université Libre de Bruxelles \\[\SubItemSkip]
-& \emph{2007 -- 2010} \\[\EducationSkip]
+& \emph{2007 -- 2010} \\[0pt]
 \end{tabular}
 
-\EndRubric{}
+\vspace{12pt}\Rubric{\faCode \quad PROGRAMMING~~SKILLS}\vspace{8pt}
+
+\begin{tabularx}{\linewidth}{@{}l@{}l@{}}
+\Bullet & Expert in: \\[0pt]
+& \quad JavaScript and TypeScript \\[\ItemSkip]
+\Bullet & Competent in: \\[0pt]
+& \quad SQL, Python, Ruby, Java, C, C++, \\[0pt]
+& \quad HTML, CSS, Haskell, Scala, \\[0pt]
+& \quad Scheme, Prolog, LaTeX \\[0pt]
+\end{tabularx}
 
 \end{minipage}
 \hspace{\MarginColumn}
 \begin{minipage}[t]{\RightColumn}
-\vspace{-18pt} % Not sure why not alligned top
-\Rubric{\faBriefcase \quad PROFESSIONAL~~EXPERIENCE}
+\vspace{-18pt}\Rubric{\faBriefcase \quad PROFESSIONAL~~EXPERIENCE}\vspace{16pt}
 
 \SubRubric{Independent Consultant}
 \emph{Oct 2023 -- Present} \\[\BeginSubRubricSkip]
-\begin{tabularx}{\linewidth}{@{}l@{}l}
-\faCaretRight~~ & Developed several web applications \\[\SubItemSkip]
-\faCaretRight~~ & Completed and submitted Ph.D. dissertation \\[\ItemSkip]
+\begin{tabularx}{\linewidth}{@{}l@{}l@{}}
+\Bullet & Developed several web applications: \\[\SubSubItemSkip]
+& \quad Collectif Santé 1140, La Nage Saint-Gilles \\[\SubItemSkip]
+\Bullet & Completed and submitted Ph.D. dissertation \\[\ItemSkip]
 \end{tabularx}
 \EndSubRubric{}
 
 \SubRubric{AppMap, USA -- Software Engineer}
 % \href{https://appmap.io}{\texttt{https://appmap.io}}
 \emph{Mar 2021 -- Sep 2023} \\[\BeginSubRubricSkip]
-\begin{tabularx}{\linewidth}{@{}l@{}l}
-\faCaretRight~~ & Developed a JavaScript code instrumenter \\[\SubItemSkip]
+\begin{tabularx}{\linewidth}{@{}l@{}l@{}}
+\Bullet & Developed a JavaScript code instrumenter \\[\SubItemSkip]
 & Recording of large volumes of execution data \\[\SubItemSkip]
 & Seamless integration with: \\[\SubSubItemSkip]
 & \quad GitHub Actions, Node.js, Express, Mocha, Jest \\[\SubItemSkip]
 & CI/CD stack: Travis, semantic-release, Prettier, ESLint, Mocha \\[\ItemSkip]
-\faCaretRight~~ & Developed a flame graph visualization in Vue \\[\SubItemSkip]
+\Bullet & Developed a flame graph visualization in Vue \\[\SubItemSkip]
 & Interactive exploration of performance impact \\[\SubItemSkip]
 & Runs in the browser and within VS Code \\[\SubItemSkip]
 & Automated testing using Cypress and Chromatic \\[\ItemSkip]
-\faCaretRight~~ & Contributed broadly across the toolchain \\[\SubItemSkip]
+\Bullet & Contributed broadly across the toolchain \\[\SubItemSkip]
 & Authored and reviewed hundreds of pull requests \\[\ItemSkip]
 \end{tabularx}
 \EndSubRubric{}
@@ -202,8 +199,8 @@ I'm Laurent Christophe, a consultant and Ph.D. student at the Vrije Universiteit
 \SubRubric{Wanit, Belgium -- Software Engineer}
 % \href{https://www.wanit.com}{\texttt{https://www.wanit.com}}
 \emph{Jan 2021 -- Mar 2021} \\[\BeginSubRubricSkip]
-\begin{tabularx}{\linewidth}{@{}l@{}X}
-\faCaretRight~~ & Developed the prototype of EasyWanit \\[\SubItemSkip]
+\begin{tabularx}{\linewidth}{@{}l@{}l@{}}
+\Bullet & Developed the prototype of EasyWanit \\[\SubItemSkip]
 & Mobile app built with Ionic \\[\SubItemSkip]
 & Communication with boiler using a custom BLE protocol \\[\ItemSkip]
 \end{tabularx}
@@ -211,28 +208,28 @@ I'm Laurent Christophe, a consultant and Ph.D. student at the Vrije Universiteit
 
 \SubRubric{Vrije Universiteit Brussel -- Ph.D. student}
 \emph{Sep 2012 -- Dec 2020} \\[\BeginSubRubricSkip]
-\begin{tabularx}{\linewidth}{@{}l@{}X}
-\faCaretRight~~ & Published in renowned international conferences: \\[\SubSubItemSkip]
+\begin{tabularx}{\linewidth}{@{}l@{}l@{}}
+\Bullet & Published in renowned international conferences: \\[\SubSubItemSkip]
 & \quad ICSME, SANER, GPCE \\[\ItemSkip]
-\faCaretRight~~ & Maintained extensive artifact records: \\[\SubSubItemSkip]
+\Bullet & Maintained extensive artifact records: \\[\SubSubItemSkip]
 & \quad 60+ npm packages with \textbf{650K+} downloads \\[\ItemSkip]
-\faCaretRight~~ & Research supported: \\[\SubSubItemSkip]
+\Bullet & Research supported: \\[\SubSubItemSkip]
 & \quad Multiple publications and dozens of BA/MA theses \\[\ItemSkip]
-\faCaretRight~~ & Contributed to open-source projects: \\[\SubSubItemSkip]
+\Bullet & Contributed to open-source projects: \\[\SubSubItemSkip]
 & \quad Node.js, Jest, ESLint, Acorn, Astring, Engine262 \\[\ItemSkip]
-\faCaretRight~~ & Collaborated with ``Hack Your Future'' Belgium \\[\ItemSkip]
-\faCaretRight~~ & Served as Teaching Assistant: \\[\SubSubItemSkip]
+\Bullet & Collaborated with ``Hack Your Future'' Belgium \\[\ItemSkip]
+\Bullet & Served as Teaching Assistant: \\[\SubSubItemSkip]
 & \quad Functional Programming course -- 7 years \\[\ItemSkip]
 \end{tabularx}
 \EndSubRubric{}
 
 \SubRubric{Audaxis, Belgium -- Intern}
 \emph{Jun 2011 -- Sep 2011} \\[\BeginSubRubricSkip]
-\begin{tabularx}{\linewidth}{@{}l@{}X}
-\faCaretRight~~ & Developed a Java-based point-of-sale system \\[\SubItemSkip]
+\begin{tabularx}{\linewidth}{@{}l@{}l@{}}
+\Bullet & Developed a Java-based point-of-sale system \\[\SubItemSkip]
 & Integration with Compiere ERP \\[\SubItemSkip]
 & Managed deployment at a Brico store \\[\ItemSkip]
-\faCaretRight~~ & Received a job offer \\[\ItemSkip]
+\Bullet & Received a job offer \\[\ItemSkip]
 \end{tabularx}
 \EndSubRubric{}
 
@@ -241,51 +238,47 @@ I'm Laurent Christophe, a consultant and Ph.D. student at the Vrije Universiteit
 \newpage
 
 \begin{minipage}[t]{\LeftColumn}
-\Rubric{\faCode \quad PROGRAMMING~~SKILLS}
-\begin{tabularx}{\linewidth}{@{}l@{}X}
-\faCaretRight~~ & Expert: JavaScript and TypeScript \\[\ItemSkip]
-\faCaretRight~~ & Competent in: SQL, Python, Java, Ruby, C, C++, HTML, CSS, Haskell, Scala, Scheme, Prolog, LaTeX \\[\ItemSkip]
+
+\Rubric{\faTools \quad TOOLING~~EXPERIENCE}\vspace{8pt}
+
+\begin{tabularx}{\linewidth}{@{}l@{}>{\raggedright\arraybackslash}X@{}}
+\Bullet & \ToolCategory{Frontend}: React, Vue.js, Ionic, Next.js, Web Components \\[0pt]
+\Bullet & \ToolCategory{Backend}: Express, NestJS, Django, Flask, Ruby on Rails \\[0pt]
+\Bullet & \ToolCategory{Databases}: MySQL, MariaDB, SQLite, PostgreSQL \\[0pt]
+\Bullet & \ToolCategory{Testing}: xUnit, Jest, Mocha, Cypress, Chromatic, Selenium \\[0pt]
+\Bullet & \ToolCategory{CI/CD}:  GitHub Actions, Travis CI \\[0pt]
+\Bullet & \ToolCategory{Version}: Git, GitHub, GitLab \\[0pt]
+\Bullet & \ToolCategory{Package}: npm, pip, gem, bundler, maven, Gradle \\[0pt]
+\Bullet & \ToolCategory{Infrastructure}: Unix, Docker \\[0pt]
+\Bullet & \ToolCategory{IDE}: VS Code, Eclipse, IntelliJ \\[0pt]
+\Bullet & \ToolCategory{Linters}: ESLint, pylint, rubocop \\[0pt]
+\Bullet & \ToolCategory{Formatters}: Prettier, black \\[0pt]
+\Bullet & \ToolCategory{Bundlers}: Webpack, esbuild, Rollup \\[0pt]
 \end{tabularx}
-\vspace{12pt}
 
-\Rubric{\faTools \quad TOOLING~~EXPERIENCE}
+\vspace{12pt}\Rubric{\faNetworkWired~COMMUNICATION~PROTOCOLS}\vspace{8pt}
 
-\begin{tabularx}{\linewidth}{@{}l@{}X}
-\faCaretRight~~ & Frontend: React, Vue.js, Ionic, Next.js, Web Components \\[0pt]
-\faCaretRight~~ & Backend: Express, NestJS, Django, Flask, Ruby on Rails \\[0pt]
-\faCaretRight~~ & Databases: MySQL, MariaDB, SQLite, PostgreSQL \\[0pt]
-\faCaretRight~~ & Testing: xUnit, Jest, Mocha, Cypress, Chromatic, Selenium \\[0pt]
-\faCaretRight~~ & Build: esbuild, Webpack, Babel, semantic-release, Prettier, ESLint \\[0pt]
-\faCaretRight~~ & Package: npm, Maven \\[0pt]
-\faCaretRight~~ & CI/CD: Travis CI, GitHub Actions \\[0pt]
-\faCaretRight~~ & Infrastructure: Unix, GitHub, Git, VS Code, Eclipse \\[0pt]
+\begin{tabularx}{\linewidth}{@{}l@{}>{\raggedright\arraybackslash}X@{}}
+\Bullet & HTTP, TCP/IP, SSL, WebSocket, POSIX Sockets, Bluetooth Low Energy (BLE) \\[0pt]
 \end{tabularx}
-\vspace{12pt}
 
-\Rubric{\faNetworkWired~COMMUNICATION~PROTOCOLS}
-\begin{tabularx}{\linewidth}{@{}l@{}X}
-\faCaretRight~~ & HTTP, TCP/IP, SSL, POSIX Sockets, WebSocket, Bluetooth Low Energy (BLE) \\[0pt]
+\vspace{12pt}\Rubric{\faLanguage \quad LANGUAGE}\vspace{8pt}
+
+\begin{tabularx}{\linewidth}{@{}l@{}l@{}}
+\Bullet & Native French speaker \\[0pt]
+\Bullet & Fluent in English \\[0pt]
+\Bullet & Basic knowledge of Dutch \\[0pt]
 \end{tabularx}
-\vspace{12pt}
 
-\Rubric{\faLanguage \quad LANGUAGE}
-\begin{tabularx}{\linewidth}{@{}l@{}l}
-\faCaretRight~~ & Native French speaker \\[0pt]
-\faCaretRight~~ & Fluent in English \\[0pt]
-\faCaretRight~~ & Basic knowledge of Dutch \\[0pt]
-\end{tabularx}
-\vspace{12pt}
+\vspace{12pt}\Rubric{\faPuzzlePiece \quad MISCELLANEOUS}\vspace{8pt}
 
-\Rubric{\faPuzzlePiece \quad MISCELLANEOUS}
-
-\begin{tabularx}{\linewidth}{@{}l@{}X}
-\faCaretRight~~ & Enthusiastic programmer and open-source contributor \\[0pt]
-\faCaretRight~~ & Creator of Aran, a JavaScript code instrumenter \\[0pt]
+\begin{tabularx}{\linewidth}{@{}l@{}>{\raggedright\arraybackslash}X@{}}
+\Bullet & Enthusiastic programmer and open-source contributor \\[0pt]
+\Bullet & Creator of Aran, a JavaScript code instrumenter \\[0pt]
   & {\footnotesize{}\Link{https://lachrist.github.io/aran}} \\[0pt]
-\faCaretRight~~ & Head coach of the NSG swimming club in Saint-Gilles since 2011 \\[0pt]
-\faCaretRight~~ & Multiple-time Belgian podium finisher in swimming \\[0pt]
+\Bullet & Head coach of the NSG swimming club in Saint-Gilles since 2011 \\[0pt]
+\Bullet & Multiple-time Belgian podium finisher in swimming \\[0pt]
 \end{tabularx}
-\vspace{12pt}
 
 \end{minipage}
 \hspace{\MarginColumn}
