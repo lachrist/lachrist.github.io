@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Repositories
+title: Projects
 ---
+
+I am an enthusiastic software developer and open-source contributor. Over the course of my career, I have developed numerous projects—more than 60 of which are published on npm, totaling over 650,000 downloads. I've also contributed issues and pull requests to many open-source projects, including Node.js, Jest, Acorn, Astring, and Engine262.
 
 The following is a curated list of my personal repositories.
 
