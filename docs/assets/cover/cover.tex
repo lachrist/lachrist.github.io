@@ -1,0 +1,84 @@
+% Design credit: LianTze Lim (liantze@gmail.com)
+
+\documentclass[a4paper,11pt,english]{article}
+\usepackage[
+  a4paper,
+  nohead,
+  nofoot,
+  hmargin=2.25cm,
+  vmargin=2cm,
+]{geometry}
+\usepackage{fontspec}
+\usepackage[medium,bold]{cabin}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tikz}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+\usepackage{inconsolata}
+\usepackage[normalem]{ulem}
+
+\definecolor{SwishLineColour}{HTML}{000000}
+\definecolor{MarkerColour}{HTML}{000000}
+
+\setmonofont{Inconsolata}
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\EmailIcon}{\textcolor{MarkerColour!80!black}{\faEnvelope[regular]}}
+\newcommand{\GithubIcon}{\textcolor{MarkerColour!80!black}{\faGithub}}
+\newcommand{\LinkedinIcon}{\textcolor{MarkerColour!80!black}{\faLinkedin}}
+\newcommand{\WebsiteIcon}{\textcolor{MarkerColour!80!black}{\faGlobe}}
+\newcommand{\EducationIcon}{\textcolor{MarkerColour!80!black}{\faGraduationCap}}
+\newcommand{\OngoingEducationIcon}{\textcolor{Grey}{\faGraduationCap}}
+\newcommand{\EmploymentIcon}{\textcolor{MarkerColour!80!black}{\faBriefcase}}
+\newcommand{\CodeIcon}{\textcolor{MarkerColour!80!black}{\faCode}}
+\newcommand{\LanguageIcon}{\textcolor{MarkerColour!80!black}{\faLanguage}}
+\newcommand{\SwimmingIcon}{\textcolor{MarkerColour!80!black}{\faSwimmer}}
+\newcommand{\PhoneIcon}{\textcolor{MarkerColour!80!black}{\faPhone}}
+\newcommand{\SubIcon}{\faCaretRight}
+\newcommand{\TransparentSubIcon}{\textcolor{white}{\faCaretRight}}
+
+\newcommand{\ExplicitLink}[1]{\href{#1}{\texttt{#1}}}
+\newcommand{\ImplicitLink}[2]{\href{#1}{\textcolor{MarkerColour!80!black}{#2}}}
+
+\begin{document}
+
+\vspace{24pt}
+
+\begin{tabular}{@{}l@{\hspace{64pt}}l}
+\begin{tabular}[t]{l}\LARGE\sffamily\bfseries Laurent Christophe\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{\hspace{8pt}}l}
+  \EmailIcon & \href{mailto:laurent.christophe.terken@gmail.com}{\texttt{laurent.christophe.terken@gmail.com}} \\[1pt]
+  \WebsiteIcon & \ExplicitLink{https://lachrist.github.io} \\[1pt]
+  \GithubIcon & \ExplicitLink{https://github.com/lachrist} \\[1pt]
+  \LinkedinIcon & \ExplicitLink{https://www.linkedin.com/in/lachrist} \\[1pt]
+\end{tabular}
+\\
+\end{tabular}
+
+\vspace{12pt}
+\begin{tikzpicture}[baseline]
+  \shade[
+    left color=SwishLineColour!60!white,
+    right color=white
+  ] rectangle (\textwidth,2.5pt);
+\end{tikzpicture}%
+
+\vspace{24pt}
+
+I am currently completing my PhD at \ImplicitLink{https://soft.vub.ac.be/soft/index.html}{SOFT}, a research group at the VUB. My dissertation is under review, and the defense is planned for mid-September. In the meantime, I am eager to stay active professionally. I bring 13 years of combined experience in software R&D across both academia and industry.
+
+\vspace{12pt}
+
+After graduating in Civil Engineering from ULB in 2012, I spent eight years in academia conducting research focused on dynamic program analysis. With over 60 published npm packages and more than 650,000 total downloads, I have a strong track record of developing prototypes that have been adopted and extended by others. My flagship project, \ImplicitLink{https://github.com/lachrist/aran}{Aran}---a full-fledged JavaScript code instrumenter---has supported both internal and international collaborations and contributed to several publications.
+
+\vspace{12pt}
+
+Since 2020, I have worked as an independent consultant, leading multiple software R\&D projects. For most of this time, I contributed to \ImplicitLink{https://appmap.io}{AppMap}, a U.S.-based startup focused on runtime code analysis. There, I led the development of a JavaScript client designed to collect large volumes of execution data while integrating seamlessly into diverse deployment scenarios, including automated testing with Jest and Mocha. Over five years of industry consulting, I have developed strong software engineering skills, including agile methodologies, Git-based workflows, release pipelines, and more.
+
+\vspace{12pt}
+
+Through the prototypes and production systems I have developed over the years, I consider myself an excellent programmer with expert-level knowledge of JavaScript and TypeScript. I am also seasoned in Haskell, having built several interpreters and compilers as part of my research, and taught it for seven years as a teaching assistant at the university. In addition, I am proficient with standard web technologies and languages such as SQL, Python, Java, and Ruby. I also have an interest in more esoteric languages, including Scheme and Prolog, which I have explored in the context of my research.
+
+\end{document}
