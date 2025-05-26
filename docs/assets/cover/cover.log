@@ -1,9 +1,12 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  26 MAY 2025 06:45
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.3)  26 MAY 2025 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**cover
-(./cover.tex
+**/Users/lachrist/Desktop/workspace/lachrist.github.io/docs/assets/cover/cover.
+tex
+
+(/Users/lachrist/Desktop/workspace/lachrist.github.io/docs/assets/cover/cover.t
+ex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -1103,12 +1106,12 @@ Package rerunfilecheck Info: File `cover.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23935 strings out of 474235
- 487466 string characters out of 5742254
+ 23936 strings out of 474235
+ 487677 string characters out of 5742254
  1935609 words of memory out of 5000000
  46219 multiletter control sequences out of 15000+600000
  561506 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 102i,13n,119p,977b,508s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,13n,119p,1030b,508s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on cover.pdf (1 page).
