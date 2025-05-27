@@ -5,7 +5,7 @@ title: Dissertation
 
 # Provenance-Based Dynamic Analysis in Managed Languages
 
-**My dissertation is currently under review, and I expect to defend it this summer.**
+**My dissertation is currently under review, with the defense scheduled for mid-September.**
 
 ## Abstract
 
