@@ -14,11 +14,10 @@ plugins:
   - jekyll-seo-tag
 markdown_ext: md
 header_pages:
-  - resume.md
   - experience.md
-  - phd.md
+  - education.md
   - publications.md
-  - repo.md
+  - projects.md
   - blog.md
   - resources.md
 collections:
