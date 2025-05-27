@@ -9,10 +9,10 @@ title: Publications
   <br> *The Art, Science, and Engineering of Programming 2020* - Second Author
 - [Concolic Testing of Full-Stack JavaScript Applications](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/publications/2018concolic.pdf?raw=true)
   <br> *BENEVOL 2018* - Second Author
-- [Orchestrating Dynamic Analyses of Distributed Processes for Full-Stack JavaScript Programs](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/publications/2020orchestration.pdf?raw=true)
+- [Orchestrating Dynamic Analyses of Distributed Processes for Full-Stack JavaScript Programs](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/publications/2018orchestration.pdf?raw=true)
   <br> *GPCE 2018* - First Author
-- [Practical Information Flow Control for Web Applications](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/publications/2020practical.pdf?raw=true)
-  <br> *RV 2020* - Second Author
+- [Practical Information Flow Control for Web Applications](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/publications/2018practical.pdf?raw=true)
+  <br> *RV 2018* - Second Author
 - [Linvail: A General-Purpose Platform for Shadow Execution of JavaScript](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/publications/2016linvail.pdf?raw=true)
   <br> *SANER 2016* - First Author
 - [Dynamic Analysis Using JavaScript Proxies](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/publications/2015proxy.pdf?raw=true)<br>  *ICSE 2015* (Poster) - First Author
