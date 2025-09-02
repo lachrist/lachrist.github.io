@@ -1,6 +1,21 @@
 
+@inproceedings{stuker2025jasmaint,
+  abstract  = {Modern web applications integrate JavaScript code with more efficient languages compiling to WebAssembly, such as C, C++ or Rust. However, such multi-language applications challenge program understanding and increase the risk of security attacks. Dynamic taint analysis is a powerful technique used to uncover confidentiality and integrity vulnerabilities. The state of the art has mainly considered taint analysis targeting a single programming language, extended with a limited set of native extensions. To deal with data flows between the language and native extensions, taint signatures or models of those extensions have been employed. However, this does not scale for multi-language web applications as the Wasm modules evolve continuously and generally do not include their source code. This paper proposes JASMaint, the first taint analysis approach for multi-language web applications. A novel analysis orchestrator component manages the exchange of taint information during interoperation between our language-specific taint analyses. JASMaint is based on source code instrumentation for both the JavaScript and WebAssembly codebases. This choice enables deployment to all runtimes that support JavaScript and WebAssembly. We evaluate our approach on a benchmark suite of multi-language programs. Our evaluation shows that JASMaint reduces overtainting by 0.003\% - 56.20\% compared to a state-of-the-art approach for taint analysis based on function models. However, this comes at the cost of an increase in performance overhead by a factor of 1.14x - 1.61x relative to state of the art.},
+  author    = {Abel Stuker and Aäron Munsters and {Luis Scull Pupo}, Angel and Laurent Christophe and {Gonzalez Boix}, Elisa},
+  booktitle = {Proceedings of the 22nd International Conference on Managed Programming Languages and Runtimes (MPLR)},
+  day       = {12},
+  language  = {English},
+  month     = oct,
+  note      = {Belgium-Netherlands Software Evolution Workshop 2024, Benevol 2024 ; Conference date: 21-11-2024 Through 22-11-2024},
+  publisher = {ACM},
+  title     = {JASMaint: Portable Multi-language Taint Analysis for the Web},
+  url       = {https://conf.researchr.org/home/icfp-splash-2025/mplr-2025},
+  year      = {2025},
+}
+
+
 @inproceedings{laurent2024aran,
-  abstract  = {We introduce Aran, a novel approach for developing heavyweight dynamic analyses of JavaScript programs. Our approach is broadly applicable, relying solely on source code instrumentation. It also supports complex customization through an intuitive aspect-oriented API, which consists of 31 entry points. With about 300 lines of code, our API can express an analysis that computes the symbolic execution tree of run-time values. Importantly, our approach preserves the semantics of the program under analysis. We implemented this approach in a tool and validated it using Test262, the official JavaScript conformance test suite, achieving a 99.7\success rate and observing performance slowdowns rarely exceeding 10x.},
+  abstract  = {We introduce Aran, a novel approach for developing heavyweight dynamic analyses of JavaScript programs. Our approach is broadly applicable, relying solely on source code instrumentation. It also supports complex customization through an intuitive aspect-oriented API, which consists of 31 entry points. With about 300 lines of code, our API can express an analysis that computes the symbolic execution tree of run-time values. Importantly, our approach preserves the semantics of the program under analysis. We implemented this approach in a tool and validated it using Test262, the official JavaScript conformance test suite, achieving a 99.7\% success rate and observing performance slowdowns rarely exceeding 10x.},
   author    = {Laurent Christophe and {De Roover}, Coen and {De Meuter}, Wolfgang},
   booktitle = {Proceedings of the 23nd Belgium-Netherlands Software Evolution Workshop (BENEVOL)},
   day       = {21},
@@ -10,7 +25,6 @@
   note      = {Belgium-Netherlands Software Evolution Workshop 2024, Benevol 2024 ; Conference date: 21-11-2024 Through 22-11-2024},
   pages     = {97--114},
   publisher = {CEUR Workshop Proceedings},
-  series    = {Proceedings of the 23nd Belgium-Netherlands Software Evolution Workshop},
   title     = {Aran: JavaScript Instrumentation for Heavyweight Dynamic Analysis},
   url       = {https://benevol2024.github.io},
   volume    = {3941},
