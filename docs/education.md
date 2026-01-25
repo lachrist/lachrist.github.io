@@ -17,8 +17,6 @@ This dissertation presents a novel modular approach to overcome these challenges
 
 This research advances the state of the art by delivering a modular framework for building robust instrumentation-based tools for provenance-aware analyses in JavaScript.
 
-[**Diploma - Short**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/diploma-master-short.pdf?raw=true)
-
 ## Master of Science in Engineering – Computer Science
 
 [**Diploma – Short**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/diploma-master-short.pdf?raw=true)
