@@ -3,13 +3,14 @@ layout: page
 title: Education
 ---
 
-## Ph.D. Dissertation - Computer Science
+<h2 id="phd">Ph.D. Dissertation – Computer Science</h2>
 
-**Provenance-Aware Dynamic Analysis of JavaScript**
+I obtained my Ph.D. in Computer Science from SOFT, VUB, in 2026 under the supervision of Prof. Dr. Coen De Roover and Prof. Dr. Wolfgang De Meuter.
 
-[**Disseration – Report**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/phd-report.pdf?raw=true)
+My dissertation, titled *Provenance-Aware Dynamic Analysis of JavaScript*, proposes a comprehensive framework to facilitate dynamic analysis of managed languages. The framework relies exclusively on source instrumentation and is illustrated using JavaScript. It helps reduce syntactic complexity, track the provenance of primitive values, and orchestrate distributed system analyses.
 
-[**Disseration – Book**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/phd-book.pdf?raw=true)
+<details>
+<summary>Abstract</summary>
 
 Dynamic program analysis, which examines a program's behavior during execution, is essential in domains such as security and software maintenance. This dissertation focuses on provenance-aware analysis, such as dynamic taint analysis, which requires tracking how data propagates during execution. To implement analyses independently from the execution environment, a common approach is to instrument the source code of the target program. However, developing robust instrumentation-based analysis tools is hindered by three key challenges in most managed languages: the syntactic complexity of the language complicates instrumentation; optimizations in the representation of immutable values make provenance tracking difficult; and the distributed nature of modern applications requires analysis orchestration.
 
@@ -17,17 +18,32 @@ This dissertation presents a novel modular approach to overcome these challenges
 
 This research advances the state of the art by delivering a modular framework for building robust instrumentation-based tools for provenance-aware analyses in JavaScript.
 
-## Master of Science in Engineering – Computer Science
+</details>
+
+[**Dissertation – Report**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/phd-report.pdf?raw=true)
+
+[**Dissertation – Book**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/phd-book.pdf?raw=true)
+
+<h2 id="msc">Master of Science in Engineering – Computer Science</h2>
+
+I graduated with great distinction (top 25% of the class) from my Master of Engineering, specializing in Computer Science, at ULB in 2012.
 
 [**Diploma – Short**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/diploma-master-short.pdf?raw=true)
 
 [**Diploma – Full**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/diploma-master.pdf?raw=true)
 
-[**Thesis: Iterative Typing**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/thesis-master.pdf?raw=true)
+[**Master Thesis: Iterative Typing**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/thesis-master.pdf?raw=true)
 
+In my Master’s thesis, I developed a hybrid type system, called *Iterative Typing*, which statically types programs and inserts runtime checks when static analysis cannot guarantee the absence of type errors. This approach allows more expressive programs to be typed, at the cost of detecting some type errors at runtime; though still earlier than with fully dynamic typing.
+
+<details>
+<summary>Abstract</summary>
 Types have been introduced into programming languages to increase safety and the abstraction level; with typing, programmers no longer directly manipulate byte strings but data of a certain type instead. Type systems must make a compromise between static safety and expressiveness; static safety being the ability to detect errors based on static code analysis and expressiveness being the ability to denote concepts. Traditionally, programming languages are separated into two classes: statically typed languages and dynamically typed languages. The first class emphasizes early error detection and catches many errors during static code analysis. The second emphasizes expressiveness but catches errors very late, right before calls to built-in functions. The gap between those two classes is considerable and we argue that the best of those two worlds can be combined. The compromise this thesis defends is called iterative typing. In essence, iterative typing is static typing that delays as few checks as possible for runtime. When uncertainty occurs during static code analysis, static typing typically makes assumptions that allow the analysis to continue but inhibit the expressiveness of the language. In the same situation, iterative typing inserts annotations into the code so the uncertainty can be precisely resolved at runtime, when more information will be available. Iterative typing shines when type deduction depends on the executed branch of a conditional structure as is the case for dispatch on types and deserialization patterns. As a validation of iterative typing, we present three case studies of practical interest; although the exposed solutions are implemented in a dynamic way, iterative typing is able to catch errors early on.
+</details>
 
-## Bachelor of Science in Engineering – Civil Engineering
+<h2 id="bsc">Bachelor of Science in Engineering – Civil Engineering</h2>
+
+I graduated from my Bachelor of Engineering at ULB (École Polytechnique de Bruxelles) in 2010.
 
 [**Diploma – Short**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/diploma-bachelor-short.pdf?raw=true)
 
