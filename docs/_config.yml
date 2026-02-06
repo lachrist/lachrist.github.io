@@ -15,7 +15,7 @@ plugins:
 markdown_ext: md
 header_pages:
   - experience.md
-  - education.md
+  - education.html
   - publications.md
   - projects.md
   - blog.md
