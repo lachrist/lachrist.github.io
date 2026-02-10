@@ -3,10 +3,6 @@ layout: page
 title: Experience
 ---
 
-[**Curriculum Vitae**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/cv.pdf?raw=true)
-
-[**Cover Letter**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/cover.pdf?raw=true)
-
 While research has been my main focus, I've also had the opportunity to work on interesting projects in the industry:
 
 - I developed the JavaScript client for the AppMap tool suite. This tool uses instrumentation to collect large volumes of execution data and integrates seamlessly with GitHub Actions, Node.js, Express, Mocha, and Jest. The CI/CD stack included Travis, semantic-release, Prettier, ESLint, and Mocha.

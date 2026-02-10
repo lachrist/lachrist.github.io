@@ -9,4 +9,8 @@ layout: page
   </p>
 </div>
 
+[**Curriculum Vitae**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/cv.pdf?raw=true)
+
+[**Cover Letter**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/cover.pdf?raw=true)
+
 __BODY__
