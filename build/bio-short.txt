@@ -1,0 +1,7 @@
+I hold a Ph.D. in Computer Science and currently work as a Research Software Engineer at Sirris. My expertise includes program analysis, language implementation, functional programming, and, more recently, generative AI.
+
+After graduating in Civil Engineering from ULB in 2012 with great distinction, I spent eight years at the Software Languages Lab (VUB) conducting research in dynamic program analysis, publishing papers at conferences such as ICSME, SANER, and GIPCE, and building widely adopted open-source prototypes.
+
+Between 2020 and 2025, I worked at VUB as an IT consultant, contributing to projects such as the EasyWanit mobile application and the development of the JavaScript client and flamegraph visualization for the AppMap runtime code analysis tool suite.
+
+Since July 2025, I have been leading research and commercial projects at Sirris while completing my Ph.D. on provenance-aware dynamic analysis of JavaScript. I currently lead three research projects focused on generative AI (LISA, GENIUS, and ANTENNA) and develop commercial generative AI solutions, including conversational interfaces and ad hoc MLP classifiers.

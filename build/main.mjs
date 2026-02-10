@@ -54,6 +54,10 @@ const prependSkip = (text) => `\\vspace{12pt}\n${text}`;
 /** @type {(text: string) -> string} */
 const fromMarkdownToLatex = (text) => convertMarkdownLink(escapePercent(text));
 
+/** @type {(text: string) -> string} */
+const removeMarkdownLink = (text) =>
+  text.replace(/\[([^\]]+)\]\(([^)]+)\)/gu, "$1");
+
 /** @type {(template: string, head: string, body: string[]) -> string} */
 const compileLatex = (template, head, body) =>
   template
