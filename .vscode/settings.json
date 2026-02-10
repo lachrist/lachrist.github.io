@@ -15,6 +15,10 @@
     "editor.autoIndent": "none",
     "editor.tabSize": 2,
   },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
   "latex-workshop.latex.autoBuild.run": "never",
   "latex-assistant.openai": [
     {

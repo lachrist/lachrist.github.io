@@ -1,0 +1,80 @@
+% Design credit: LianTze Lim (liantze@gmail.com)
+
+\documentclass[a4paper,11pt,english]{article}
+\usepackage[
+  a4paper,
+  nohead,
+  nofoot,
+  hmargin=2.25cm,
+  vmargin=2cm,
+]{geometry}
+\usepackage{fontspec}
+\usepackage[medium,bold]{cabin}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tikz}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+\usepackage{inconsolata}
+\usepackage[normalem]{ulem}
+
+\definecolor{SwishLineColour}{HTML}{000000}
+\definecolor{MarkerColour}{HTML}{000000}
+
+\setmonofont{Inconsolata}
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\EmailIcon}{\textcolor{MarkerColour!80!black}{\faEnvelope[regular]}}
+\newcommand{\GithubIcon}{\textcolor{MarkerColour!80!black}{\faGithub}}
+\newcommand{\LinkedinIcon}{\textcolor{MarkerColour!80!black}{\faLinkedin}}
+\newcommand{\WebsiteIcon}{\textcolor{MarkerColour!80!black}{\faGlobe}}
+\newcommand{\EducationIcon}{\textcolor{MarkerColour!80!black}{\faGraduationCap}}
+\newcommand{\OngoingEducationIcon}{\textcolor{Grey}{\faGraduationCap}}
+\newcommand{\EmploymentIcon}{\textcolor{MarkerColour!80!black}{\faBriefcase}}
+\newcommand{\CodeIcon}{\textcolor{MarkerColour!80!black}{\faCode}}
+\newcommand{\LanguageIcon}{\textcolor{MarkerColour!80!black}{\faLanguage}}
+\newcommand{\SwimmingIcon}{\textcolor{MarkerColour!80!black}{\faSwimmer}}
+\newcommand{\PhoneIcon}{\textcolor{MarkerColour!80!black}{\faPhone}}
+\newcommand{\SubIcon}{\faCaretRight}
+\newcommand{\TransparentSubIcon}{\textcolor{white}{\faCaretRight}}
+
+\newcommand{\ExplicitLink}[1]{\href{#1}{\texttt{#1}}}
+\newcommand{\ImplicitLink}[2]{\href{#1}{\textcolor{MarkerColour!80!black}{#2}}}
+
+\begin{document}
+
+\vspace{24pt}
+
+\begin{tabular}{@{}l@{\hspace{64pt}}l}
+\begin{tabular}[t]{l}
+\LARGE\sffamily\bfseries Laurent Christophe \\
+\\
+\Large\sffamily Software Research \\
+\Large\sffamily Engineer \\
+\end{tabular}
+
+&
+\begin{tabular}[t]{@{}l@{\hspace{8pt}}l}
+  \EmailIcon & \href{mailto:laurent.christophe.terken@gmail.com}{\texttt{laurent.christophe.terken@gmail.com}} \\[1pt]
+  \WebsiteIcon & \ExplicitLink{https://lachrist.github.io} \\[1pt]
+  \GithubIcon & \ExplicitLink{https://github.com/lachrist} \\[1pt]
+  \LinkedinIcon & \ExplicitLink{https://www.linkedin.com/in/lachrist} \\[1pt]
+\end{tabular}
+\\
+\end{tabular}
+
+\vspace{12pt}
+\begin{tikzpicture}[baseline]
+  \shade[
+    left color=SwishLineColour!60!white,
+    right color=white
+  ] rectangle (\textwidth,2.5pt);
+\end{tikzpicture}%
+
+\vspace{48pt}
+
+__HEAD__
+
+__BODY__
+
+\end{document}

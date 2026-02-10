@@ -3,9 +3,9 @@ layout: page
 title: Experience
 ---
 
-[**Curriculum Vitae**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/cv/cv.pdf?raw=true)
+[**Curriculum Vitae**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/cv.pdf?raw=true)
 
-[**Cover Letter**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/cover/cover.pdf?raw=true)
+[**Cover Letter**](https://github.com/lachrist/lachrist.github.io/blob/main/docs/assets/cover.pdf?raw=true)
 
 While research has been my main focus, I've also had the opportunity to work on interesting projects in the industry:
 

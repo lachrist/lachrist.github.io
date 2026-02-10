@@ -1,0 +1,8 @@
+cover.*
+!cover.template.tex
+
+cv.*
+!cv.template.tex
+
+cv-academic.*
+!cv-academic.template.tex
