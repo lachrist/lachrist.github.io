@@ -1,0 +1,201 @@
+{
+  "$schema": "./calendar.schema.json",
+  "begin": "2012-08-01",
+  "events": [
+    {
+      "title": "MEng CS",
+      "description": [
+        "Master of Engineering in Computer Science, ULB",
+        "Graduated with Great Distinction (top 25% of the class)"
+      ],
+      "date": "2012-08-30"
+    }
+  ],
+  "lines": [
+    {
+      "blocks": [
+        {
+          "color": "#e36539",
+          "span": {
+            "from": "2012-09-01",
+            "to": "2023-09-30"
+          },
+          "events": [
+            {
+              "title": "VUB - Predoc",
+              "description": [
+                "Predoctoral fellow at the SOFT lab at VUB; among other duties, I was a teaching assistant for the Functional Programming course."
+              ],
+              "date": "2012-09-01"
+            }
+          ]
+        },
+        {
+          "color": "#C242B1",
+          "span": {
+            "from": "2021-03-01",
+            "to": "2023-09-30"
+          },
+          "events": [
+            {
+              "title": "appmap.io - SWE",
+              "description": [
+                "Software Engineer for appmap.io, a US-based startup specializing in software observability and security."
+              ],
+              "date": "2021-03-01"
+            }
+          ]
+        },
+        {
+          "color": "#e36539",
+          "span": {
+            "from": "2023-10-01",
+            "to": "2025-05-31"
+          },
+          "events": [
+            {
+              "title": "VUB - SWE",
+              "description": [
+                "Consultant on behalf of VUB for small-scale projects."
+              ],
+              "date": "2023-10-01"
+            }
+          ]
+        },
+        {
+          "color": "#2d1329",
+          "span": {
+            "from": "2025-06-01",
+            "to": null
+          },
+          "events": [
+            {
+              "title": "Sirris - RSE",
+              "description": [
+                "Research Software Engineer at Sirris, a Belgian research center for the technology industry."
+              ],
+              "date": "2025-06-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "blocks": [
+        {
+          "color": "#30417b",
+          "span": {
+            "from": "2012-09-01",
+            "to": "2026-01-27"
+          },
+          "events": [
+            {
+              "title": "Ph.D. Research",
+              "description": [
+                "Predoctoral research in dynamic analysis of JavaScript at the SOFT lab at VUB, under the supervision of Prof. Dr. Coen De Roover and Prof. Dr. Wolfgang De Meuter."
+              ],
+              "date": "2012-09-01"
+            },
+            {
+              "title": "Publication #1",
+              "description": [
+                "Run-time Validation of Behavioral Adaptations",
+                "Authors: Nicolas Cardozo Alvarez, Laurent Christophe, Coen De Roover, Wolfgang De Meuter",
+                "Venue: COP 2014 (ACM)"
+              ],
+              "date": "2014-07-29"
+            },
+            {
+              "title": "Publication #2",
+              "description": [
+                "Prevalence and Maintenance of Automated Functional Tests for Web Applications",
+                "Authors: Laurent Christophe, Reinout Stevens, Coen De Roover, Wolfgang De Meuter",
+                "Venue: ICSME 2014"
+              ],
+              "date": "2014-10-01"
+            },
+            {
+              "title": "Publication #3",
+              "description": [
+                "Poster: Dynamic Analysis Using JavaScript Proxies",
+                "Authors: Laurent Christophe, Coen De Roover, Wolfgang De Meuter",
+                "Venue: ICSE 2015 (IEEE)"
+              ],
+              "date": "2015-05-16"
+            },
+            {
+              "title": "Publication #4",
+              "description": [
+                "Linvail: A General-Purpose Platform for Shadow Execution of JavaScript",
+                "Authors: Laurent Christophe, Wolfgang De Meuter, Elisa Gonzalez Boix, Coen De Roover",
+                "Venue: SANER 2016 (IEEE CS)"
+              ],
+              "date": "2016-03-18"
+            },
+            {
+              "title": "Publication #5",
+              "description": [
+                "Orchestrating Dynamic Analyses of Distributed Processes for Full-Stack JavaScript Programs",
+                "Authors: Laurent Christophe, Coen De Roover, Elisa Gonzalez Boix, Wolfgang De Meuter",
+                "Venue: GPCE 2018 (ACM)"
+              ],
+              "date": "2018-11-05"
+            },
+            {
+              "title": "Publication #6",
+              "description": [
+                "Practical Information Flow Control for Web Applications",
+                "Authors: Angel Luis Scull Pupo, Laurent Christophe, Jens Nicolay, Coen De Roover, Elisa Gonzalez Boix",
+                "Venue: RV 2018 (Springer)"
+              ],
+              "date": "2018-11-11"
+            },
+            {
+              "title": "Publication #7",
+              "description": [
+                "Concolic Testing of Full-Stack JavaScript Applications",
+                "Authors: Maarten Vandercammen, Laurent Christophe, Wolfgang De Meuter, Coen De Roover",
+                "Venue: BENEVOL 2018 (CEUR Workshop Proceedings)"
+              ],
+              "date": "2018-12-11"
+            },
+            {
+              "title": "Publication #8",
+              "description": [
+                "Prioritising Server Side Reachability via Inter-process Concolic Testing",
+                "Authors: Maarten Vandercammen, Laurent Christophe, Dario Di Nucci, Wolfgang De Meuter, Coen De Roover",
+                "Venue: The Art, Science, and Engineering of Programming, 2020"
+              ],
+              "date": "2020-10-01"
+            },
+            {
+              "title": "Publication #9",
+              "description": [
+                "Aran: JavaScript Instrumentation for Heavyweight Dynamic Analysis",
+                "Authors: Laurent Christophe, Coen De Roover, Wolfgang De Meuter",
+                "Venue: BENEVOL 2024 (CEUR Workshop Proceedings)"
+              ],
+              "date": "2024-11-21"
+            },
+            {
+              "title": "Publication #10",
+              "description": [
+                "JASMaint: Portable Multi-language Taint Analysis for the Web",
+                "Authors: Abel Stuker, Aäron Munsters, Angel Luis Scull Pupo, Laurent Christophe, Elisa Gonzalez Boix",
+                "Venue: MPLR 2025 (ACM)"
+              ],
+              "date": "2025-10-12"
+            },
+            {
+              "title": "Ph.D. Defense",
+              "description": [
+                "Defended my Ph.D. dissertation: Provenance-Aware Dynamic Analysis of JavaScript."
+              ],
+              "date": "2026-01-27"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

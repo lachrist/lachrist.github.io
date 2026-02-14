@@ -14,7 +14,7 @@ plugins:
   - jekyll-seo-tag
 markdown_ext: md
 header_pages:
-  - experience.md
+  - experience.html
   - education.html
   - publications.md
   - projects.md
