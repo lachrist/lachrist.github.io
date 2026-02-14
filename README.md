@@ -1,8 +1,6 @@
 
 Repository for my [personnal page](https://lachrist.github.io).
 
-```
-bundle install
-cd docs
-bundle exec jekyll serve
+```sh
+docker run --rm -p 4000:4000 -v "$$PWD":/srv/jekyll
 ```
