@@ -1,0 +1,11 @@
+{
+  "languages": {
+    "Markdown": {
+      "format_on_save": "on",
+      "soft_wrap": "none",
+    },
+    "JSON": {
+      "format_on_save": "on",
+    }
+  }
+}

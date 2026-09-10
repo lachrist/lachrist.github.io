@@ -9,9 +9,12 @@ github_username: lachrist
 theme: minima
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  math_engine: katex
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - kramdown-math-katex
 markdown_ext: md
 header_pages:
   - experience.html

@@ -1,11 +1,29 @@
 version: "3.8"
 
 services:
+  # Local dev server with live-reload: docker compose up
   jekyll:
     build: .
     ports:
       - "4000:4000"
+    expose:
+      - "4000"
     volumes:
-      - ./docs:/srv/jekyll/docs
-      - ./docs/vendor/bundle:/usr/local/bundle
-    command: jekyll serve --source /srv/jekyll/docs --watch --force_polling --host 0.0.0.0
+      - .:/srv/app
+      - bundle_cache:/usr/local/bundle
+    command: >
+      bundle exec jekyll serve
+      --source docs --destination _site
+      --host 0.0.0.0 --port 4000 --watch --force_polling
+
+  # One-off build identical to the "Build site" step in deploy.yml:
+  # docker compose run --rm build
+  build:
+    build: .
+    volumes:
+      - .:/srv/app
+      - bundle_cache:/usr/local/bundle
+    command: bundle exec jekyll build --source docs --destination _site
+
+volumes:
+  bundle_cache:
