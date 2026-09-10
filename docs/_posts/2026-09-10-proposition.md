@@ -58,18 +58,16 @@ either one alone suffices to express all the other truth-functional connectives.
 
 ## Semantics of Propositional Logic
 
-The semantics of a logical language is usually described as a relation between models and formulas.
-We write $$M \models \varphi$$ to mean that the model $$M$$ satisfies the formula $$\varphi$$ (or, equivalently, that $$\varphi$$ holds in $$M$$).
-Thus, the truth of a formula is expressed relative to a model, which reflects Tarski's conception of truth:
-
-> "Snow is white" is true if and only if snow is white.
+The semantics of a logical language is usually described as a relation between structures and formulas.
+We write $$M \models \varphi$$ to mean that the structure $$M$$ satisfies the formula $$\varphi$$.
+Equivalently, we say that $$\varphi$$ holds in $$M$$ or that $$M$$ is a model for $$\varphi$$.
 
 In propositional logic, the satisfaction relation can be defined by evaluating propositional formulas over a binary alphabet (often $$\mathrm{T}$$ and $$\mathrm{F}$$).
-A model corresponds to an assignment of all the propositional variables to either symbol of this alphabet.
+A structure corresponds to an assignment of all the propositional variables to either symbol of this alphabet.
 A formula is evaluated as follows:
 
 - If present in the language, the constants $$\top$$ and $$\bot$$ are evaluated to $$\mathrm{T}$$ and $$\mathrm{F}$$, respectively.
-- The value of a variable is directly given by the model.
+- The value of a variable is directly given by the structure.
 - The value of a compound formula is defined using evaluation tables.
 
 Given an evaluation function $$\llbracket\rrbracket$$, we then define the satisfaction relation as:
@@ -78,54 +76,61 @@ $$
 M \models \varphi := \llbracket \varphi \rrbracket_M = \mathrm{T}
 $$
 
+This definition of satisfaction reflects Tarski's famous conception of truth:
+
+> "Snow is white" is true if and only if snow is white.
+
 Note that we should not confuse the truth value of a formula with the truth value of the satisfaction relation.
 The former belongs to the base language, while the latter belongs to the meta language.
 This distinction can perhaps be better observed in the following Haskell evaluator for propositional logic.
 
 ```haskell
 type Variable = String -- Infinite, but recursively enumerable
+
 data Formula
-  = Atom Variable         -- p, q, ...
-  | Neg Formula           -- ¬φ
-  | And Formula Formula   -- (φ ∧ φ)
-  | Or Formula Formula    -- (φ ∨ φ)
-  | Imply Formula Formula -- (φ → φ)
-data Value = T | F
-type Model = Variable -> Value
+  = Atom Variable               -- p, q, ...
+  | Negation Formula            -- ¬φ
+  | Conjunction Formula Formula -- (φ ∧ φ)
+  | Disjunction Formula Formula -- (φ ∨ φ)
+  | Implication Formula Formula -- (φ → φ)
+
+data Binary = T | F deriving (Eq)
+
+negate :: Binary -> Binary
+negate T = F
+negate F = T
+
+disjunct :: Binary -> Binary -> Binary
+disjunct F F = F
+disjunct _ _ = T
+
+conjunct :: Binary -> Binary -> Binary
+conjunct T T = T
+conjunct _ _ = F
+
+imply :: Binary -> Binary -> Binary
+imply T F = F
+imply _ _ = T
+
+type Structure = Variable -> Binary
 
 -- Only linear complexity with the size of the formula
-eval :: Model -> Formula -> Value
+eval :: Structure -> Formula -> Binary
 eval m (Atom v) = m v
-eval m (Neg f) = case (eval m f) of
-  T -> F
-  F -> T
-eval m (And f1 f2) = case (eval m f1, eval m f2) of
-  (T, T) -> T
-  (T, F) -> F
-  (F, T) -> F
-  (F, F) -> F
-eval m (Or f1 f2) = case (eval m f1, eval m f2) of
-  (T, T) -> T
-  (T, F) -> T
-  (F, T) -> T
-  (F, F) -> F
-eval m (Imply f1 f2) = case (eval m f1, eval m f2) of
-  (T, T) -> T
-  (T, F) -> F
-  (F, T) -> T
-  (F, F) -> T
+eval m (Negation f) = negate (eval m f)
+eval m (Conjunction f1 f2) = conjunct (eval m f1) (eval m f2)
+eval m (Disjunction f1 f2) = disjunct (eval m f1) (eval m f2)
+eval m (Implication f1 f2) = imply (eval m f1) (eval m f2)
 
-satisfies :: Model -> Formula -> Bool
-satisfies model formula = case eval model formula of
-  T -> True
-  F -> False
+satisfies :: Structure -> Formula -> Bool
+satisfies m f = eval m f == T
 ```
 
 In our evaluator, Haskell is the meta language in which we define the base language of propositional logic.
-The truth value of a propositional formula belongs to the custom `Value` data type,
+The truth value of a propositional formula belongs to the custom `Binary` data type,
 while the truth value of the satisfaction relation belongs to the built-in `Bool` data type.
 
-The table below illustrates the evaluation of several formulas under different models:
+The table below illustrates the evaluation of several formulas under different structures:
 
 | $$\varphi$$                                          |    $$M(p)$$    |    $$M(q)$$    | $$\ldots$$ | $$\llbracket\varphi\rrbracket_M$$ |
 | ---------------------------------------------------- | :------------: | :------------: | :--------: | :-------------------------------: |
@@ -140,23 +145,23 @@ The table below illustrates the evaluation of several formulas under different m
 | $$\bot := p \land \neg p$$                           | $$\mathrm{T}$$ |   $$\ldots$$   | $$\ldots$$ |          $$\mathrm{F}$$           |
 |                                                      | $$\mathrm{F}$$ |   $$\ldots$$   | $$\ldots$$ |          $$\mathrm{F}$$           |
 
-Note that all models satisfy $$\top$$, while no model satisfies $$\bot$$.
+Note that all structures satisfy $$\top$$, while no structure satisfies $$\bot$$.
 We say that $$\top$$ is a tautology, while $$\bot$$ is a contradiction.
 
 ## Satisfiability and Validity
 
 In general (not just in propositional logic), the satisfaction relation allows us to define two important concepts:
 
-| Condition                         | Property              | Definition                                |
-| --------------------------------- | --------------------- | ----------------------------------------- |
-| $$\exists M,\ M \models \varphi$$ | **Satisfiable (SAT)** | At least one model satisfies $$\varphi$$. |
-| $$\forall M,\ M \models \varphi$$ | **Valid (VAL)**       | All models satisfy $$\varphi$$.           |
+| Condition                         | Property              | Definition                                    |
+| --------------------------------- | --------------------- | --------------------------------------------- |
+| $$\exists M,\ M \models \varphi$$ | **Satisfiable (SAT)** | At least one structure satisfies $$\varphi$$. |
+| $$\forall M,\ M \models \varphi$$ | **Valid (VAL)**       | All structures satisfy $$\varphi$$.           |
 
-Because the universe of models is inhabited, we only have these three categories of formulas to consider:
+Because the universe of structures is inhabited, we only have these three categories of formulas to consider:
 
-- VAL (therefore SAT): The formula holds for all models.
-- SAT + !VAL: The formula holds for some models but not others.
-- !SAT (therefore !VAL): The formula doesn't hold in any models.
+- VAL (therefore SAT): The formula holds for all structures.
+- SAT + !VAL: The formula holds for some structures but not others.
+- !SAT (therefore !VAL): The formula doesn't hold in any structures.
 
 Importantly, in propositional logic, negation is truth-complementing.
 That is, we can move negation in either direction between the meta language and the base language:
@@ -175,11 +180,11 @@ Note that not every logic has truth-complementing negation
 (e.g., [intuitionistic logic](https://en.wikipedia.org/wiki/intuitionistic_logic)).
 
 We now explore how to effectively decide propositional SAT/VAL.
-Naively, we can simply evaluate the formula under every conceivable model.
-The technical difficulty is that there are infinitely many models because the set of propositional variables is infinite.
+Naively, we can simply evaluate the formula under every conceivable structure.
+The technical difficulty is that there are infinitely many structures because the set of propositional variables is infinite.
 However, a given formula $$\varphi$$ depends only on the finitely many variables that actually occur in it.
-Two models that agree on those variables necessarily give $$\varphi$$ the same truth value.
-Thus, if $$\varphi$$ contains $$n$$ distinct variables, there are "only" $$2^n$$ relevant classes of models to consider.
+Two structures that agree on those variables necessarily give $$\varphi$$ the same truth value.
+Thus, if $$\varphi$$ contains $$n$$ distinct variables, there are "only" $$2^n$$ relevant classes of structures to consider.
 A naive SAT/VAL algorithm enumerates one representative assignment from each of these classes and evaluates $$\varphi$$ under it.
 
 This algorithm for deciding propositional SAT/VAL performs poorly, as its worst-case running time grows exponentially with the formula length.
@@ -192,12 +197,12 @@ Given the difficulty of deciding whether a formula is SAT/VAL, it is useful to a
 "How can we easily convince someone that a formula is SAT, VAL, !SAT, or !VAL?"
 
 The easier cases are SAT and !VAL.
-For SAT, it suffices to provide an example model that satisfies the formula.
-Dually, for !VAL, it suffices to provide a counterexample model that does not satisfy the formula.
+For SAT, it suffices to provide an example structure that satisfies the formula.
+Dually, for !VAL, it suffices to provide a counterexample structure that does not satisfy the formula.
 
 For instance, $$\varphi := (p \lor q) \to p$$ is both SAT and !VAL:
 
-| Model          | $$p$$          | $$q$$          | $$\varphi$$    | Demonstrates |
+| Structure      | $$p$$          | $$q$$          | $$\varphi$$    | Demonstrates |
 | -------------- | -------------- | -------------- | -------------- | ------------ |
 | Example        | $$\mathrm{T}$$ | $$\mathrm{F}$$ | $$\mathrm{T}$$ | SAT          |
 | Counterexample | $$\mathrm{F}$$ | $$\mathrm{T}$$ | $$\mathrm{F}$$ | !VAL         |
@@ -217,8 +222,8 @@ It is widely believed, but not proven, that there is no polynomial-time algorith
 
 ## VAL/!SAT Certification
 
-We saw that SAT/!VAL certificates are about proving the presence of certain models (this only requires exhibiting one).
-In contrast, VAL/!SAT certificates are about proving the absence of certain models, which is less obvious.
+We saw that SAT/!VAL certificates are about proving the presence of certain structures (this only requires exhibiting one).
+In contrast, VAL/!SAT certificates are about proving the absence of certain structures, which is less obvious.
 This is precisely the goal of deduction systems.
 A deduction system generally recursively defines what a derivation is and which formula it certifies as VAL/!SAT.
 The admissible leaves of a derivation are defined by axiom rules.
@@ -270,7 +275,7 @@ For instance:
 | $$p \land \neg q$$<br> SAT + !VAL | $$q \land \neg q$$<br>!SAT (+!VAL) |
 
 The reason why VAL/!SAT is preserved under substitution while SAT/!VAL isn't is that the former makes a universal claim, while the latter makes an existential claim.
-If the replacement formula contains variables that already appear elsewhere in the formula, we may reduce the effective universe of models.
+If the replacement formula contains variables that already appear elsewhere in the formula, we may reduce the effective universe of structures.
 This may affect the existential claim, but never the universal claim.
 
 ## Hilbert-Style Deduction
@@ -599,7 +604,7 @@ $$
 \varphi ::= p \mid q \mid \ldots \mid \neg \varphi \mid (\varphi \land \varphi) \mid (\varphi \lor \varphi) \mid (\varphi  \varphi)
 $$
 
-We then gave meaning to this language by evaluating formulas relative to a model $$M$$:
+We then gave meaning to this language by evaluating formulas relative to a structure $$M$$ that maps propositional variables over a binary alphabet:
 
 $$
 \llbracket\varphi\rrbracket_M \in \{\mathrm{T}, \mathrm{F}\}
@@ -627,11 +632,11 @@ $$
 
 This enables us to reduce the decision problems SAT and !VAL to one another, and VAL and !SAT to one another.
 
-We noted that a certificate for SAT/!VAL may simply consist of a model, which can be verified in linear time.
+We noted that a certificate for SAT/!VAL may simply consist of a structure, which can be verified in linear time.
 We stated the Cook-Levin theorem: any problem that admits a polynomial certificate can be reduced to SAT.
 By definition, this means that SAT is NP-complete which is a class of problems widely believed not to admit polynomial-time algorithms.
 
-In contrast, a certificate for VAL/!SAT must prove the absence of a model, which is less straightforward.
+In contrast, a certificate for VAL/!SAT must prove the absence of a structure, which is less straightforward.
 In logic, this is done via a deduction system that recursively defines what a derivation is.
 The best algorithms known to date for VAL/!SAT still take exponential time in the worst case and may generate exponential-size derivations.
 Hence, we do not know whether VAL/!SAT is in NP.
