@@ -17,27 +17,48 @@ In other words, this presentation distinguishes between two languages:
 
 ## Syntax of Propositional Logic
 
-The language of propositional logic consists of propositional variables, logical connectives, and parentheses.
+The sentences of the language of propositional logic are called _propositional formulas_.
 At this point, we focus on the syntactic aspect of the language and refrain from interpreting it.
 
-One common formalism is:
+A common recursive definition of a propositional formula $$\varphi$$ uses _Backus-Naur form_ (BNF):
 
 $$
 \varphi ::= p \mid q \mid \ldots \mid \neg \varphi \mid (\varphi \land \varphi) \mid (\varphi \lor \varphi) \mid (\varphi \to \varphi)
 $$
 
-Here, $$p, q, \ldots$$ informally indicate that we have an arbitrary supply of propositional variables.
-More formally, the set of propositional variables is infinite but recursively enumerable.
 Note that $$\varphi$$ is a variable of the meta language; it does not appear in propositional logic.
 
-For instance, the following is a valid sentence of propositional logic (which we call a propositional formula):
+For instance, this is a (well-formed) propositional formula:
 
 $$
-(p \land q) \to \neg r
+((p \land q) \to \neg r)
 $$
 
-We can derive additional logical connectives in terms of the primitive ones that we have chosen for the language.
+**The set of propositional symbols**
 
+In our definition, $$p, q, \ldots$$ informally indicate that we have an arbitrary supply of propositional symbols.
+The term "propositional variable" is perhaps more standard than "propositional symbol".
+But we prefer using "symbol" because it is more consistent with the terminology of first-order logic.
+
+Classically, it is assumed that the set of propositional symbols is infinite but remains countable.
+However, some applications of propositional logic may require an uncountable set of propositional symbols.
+For instance, we could define:
+
+$$
+p_t := \text{the system is active at time}~t~~~~~(t \in \mathbb{R})
+$$
+
+However, this makes the set of propositional formulas itself uncountable, preventing Gödel numbering and classical complexity/computability analysis.
+Rather, we follow the classical approach with an infinite but countable set of propositional symbols.
+So we would have to adapt the above example to something like:
+
+$$
+p_d := \text{the system is active on day}~d~~~~~(d \in \mathbb{N})
+$$
+
+**Primitive versus derived constructs**
+
+We can derive additional logical constructs in terms of the primitive ones that we have chosen for the language.
 For instance:
 
 $$
@@ -50,11 +71,11 @@ $$
 \end{aligned}
 $$
 
-We could have chosen primitive connectives other than $$\neg$$, $$\land$$, $$\lor$$, and $$\to$$.
+We could have chosen primitive constructs other than $$\neg$$, $$\land$$, $$\lor$$, and $$\to$$.
 However, they are a common choice because they correspond closely to connectives in natural language.
 
 Interestingly, both the Sheffer stroke (NAND) and the Peirce arrow (NOR) are functionally complete:
-either one alone suffices to express all the other truth-functional connectives.
+either one alone suffices to express all possible Boolean functions.
 
 ## Semantics of Propositional Logic
 
@@ -63,11 +84,11 @@ We write $$M \models \varphi$$ to mean that the structure $$M$$ satisfies the fo
 Equivalently, we say that $$\varphi$$ holds in $$M$$ or that $$M$$ is a model for $$\varphi$$.
 
 In propositional logic, the satisfaction relation can be defined by evaluating propositional formulas over a binary alphabet (often $$\mathrm{T}$$ and $$\mathrm{F}$$).
-A structure corresponds to an assignment of all the propositional variables to either symbol of this alphabet.
+A structure corresponds to an assignment of all the propositional symbols to either binary symbol.
 A formula is evaluated as follows:
 
 - If present in the language, the constants $$\top$$ and $$\bot$$ are evaluated to $$\mathrm{T}$$ and $$\mathrm{F}$$, respectively.
-- The value of a variable is directly given by the structure.
+- The value of a propositional symbol is directly given by the structure.
 - The value of a compound formula is defined using evaluation tables.
 
 Given an evaluation function $$\llbracket\rrbracket$$, we then define the satisfaction relation as:
@@ -80,15 +101,14 @@ This definition of satisfaction reflects Tarski's famous conception of truth:
 
 > "Snow is white" is true if and only if snow is white.
 
-Note that we should not confuse the truth value of a formula with the truth value of the satisfaction relation.
-The former belongs to the base language, while the latter belongs to the meta language.
-This distinction can perhaps be better observed in the following Haskell evaluator for propositional logic.
+Note that we should not confuse the truth value of a formula (base language) with the truth value of the satisfaction relation (meta language).
+This distinction can perhaps be better observed in the following Haskell evaluator for propositional logic:
 
 ```haskell
-type Variable = String -- Infinite, but recursively enumerable
+type Symbol = String -- Infinite, but recursively enumerable
 
 data Formula
-  = Atom Variable               -- p, q, ...
+  = Atom Symbol                 -- p, q, ...
   | Negation Formula            -- ¬φ
   | Conjunction Formula Formula -- (φ ∧ φ)
   | Disjunction Formula Formula -- (φ ∨ φ)
@@ -112,18 +132,18 @@ imply :: Binary -> Binary -> Binary
 imply T F = F
 imply _ _ = T
 
-type Structure = Variable -> Binary
+type Structure = Symbol -> Binary
 
 -- Only linear complexity with the size of the formula
 eval :: Structure -> Formula -> Binary
-eval m (Atom v) = m v
-eval m (Negation f) = negate (eval m f)
-eval m (Conjunction f1 f2) = conjunct (eval m f1) (eval m f2)
-eval m (Disjunction f1 f2) = disjunct (eval m f1) (eval m f2)
-eval m (Implication f1 f2) = imply (eval m f1) (eval m f2)
+eval s (Atom p) = s p
+eval s (Negation f) = negate (eval s f)
+eval s (Conjunction f1 f2) = conjunct (eval s f1) (eval s f2)
+eval s (Disjunction f1 f2) = disjunct (eval s f1) (eval s f2)
+eval s (Implication f1 f2) = imply (eval s f1) (eval s f2)
 
 satisfies :: Structure -> Formula -> Bool
-satisfies m f = eval m f == T
+satisfies s f = eval s f == T
 ```
 
 In our evaluator, Haskell is the meta language in which we define the base language of propositional logic.
@@ -181,10 +201,10 @@ Note that not every logic has truth-complementing negation
 
 We now explore how to effectively decide propositional SAT/VAL.
 Naively, we can simply evaluate the formula under every conceivable structure.
-The technical difficulty is that there are infinitely many structures because the set of propositional variables is infinite.
-However, a given formula $$\varphi$$ depends only on the finitely many variables that actually occur in it.
-Two structures that agree on those variables necessarily give $$\varphi$$ the same truth value.
-Thus, if $$\varphi$$ contains $$n$$ distinct variables, there are "only" $$2^n$$ relevant classes of structures to consider.
+The technical difficulty is that there are infinitely many structures because the set of propositional symbols is infinite.
+However, a given formula $$\varphi$$ depends only on the finitely many symbols that actually occur in it.
+Two structures that agree on those symbols necessarily give $$\varphi$$ the same truth value.
+Thus, if $$\varphi$$ contains $$n$$ distinct symbols, there are "only" $$2^n$$ relevant classes of structures to consider.
 A naive SAT/VAL algorithm enumerates one representative assignment from each of these classes and evaluates $$\varphi$$ under it.
 
 This algorithm for deciding propositional SAT/VAL performs poorly, as its worst-case running time grows exponentially with the formula length.
@@ -211,7 +231,7 @@ An important class of problems in complexity theory is _NP_.
 By definition, _NP_ consists of decision problems for which we can always produce polynomial-size certificates.
 These certificates must allow a "yes" answer to be verified in polynomial time relative to the input size.
 
-The certificate for SAT/!VAL corresponds to an assignment to the variables that appear in the formula.
+The certificate for SAT/!VAL corresponds to an assignment to the symbols that appear in the formula.
 Verification consists of evaluating the formula under this assignment, which takes time linear in the formula length.
 Therefore, SAT/!VAL is in NP.
 
@@ -250,8 +270,8 @@ For classical propositional logic, we do not know whether there is a proof syste
 Therefore, we do not know whether propositional VAL/!SAT is in NP.
 
 An important property of VAL/!SAT formulas in classical propositional logic is that they are closed under uniform substitution.
-That is, a VAL/!SAT formula remains VAL/!SAT after consistently replacing its propositional variables with arbitrary formulas.
-The replacement formula may even contain propositional variables that appear elsewhere in the formula.
+That is, a VAL/!SAT formula remains VAL/!SAT after consistently replacing its propositional symbols with arbitrary formulas.
+The replacement formula may even contain propositional symbols that appear elsewhere in the formula.
 For instance:
 
 | Original                            | $$p := q$$                          | $$p := p \lor q$$                                     |
@@ -263,7 +283,7 @@ For instance:
 This enables rules to apply to an infinite range of concrete cases through the use of meta variables.
 More concretely, rules feature formula _schemas_ rather than actual propositional formulas.
 For instance, the formula schema $$\varphi \to \varphi$$ stands for $$p \to p$$, $$(p \land q) \to (p \land q)$$, etc.
-We can even allow meta-variables to remain in derivations, turning the derivations themselves into schemas.
+We can even allow meta variables to remain in derivations, turning the derivations themselves into schemas.
 
 In contrast, SAT/!VAL formulas are _not_ closed under substitution.
 This explains why SAT/!VAL certificates based on assignments must apply to actual propositional formulas rather than schemas.
@@ -275,7 +295,7 @@ For instance:
 | $$p \land \neg q$$<br> SAT + !VAL | $$q \land \neg q$$<br>!SAT (+!VAL) |
 
 The reason why VAL/!SAT is preserved under substitution while SAT/!VAL isn't is that the former makes a universal claim, while the latter makes an existential claim.
-If the replacement formula contains variables that already appear elsewhere in the formula, we may reduce the effective universe of structures.
+If the replacement formula contains propositional symbols that already appear elsewhere in the formula, we are introducing additional dependencies.
 This may affect the existential claim, but never the universal claim.
 
 ## Hilbert-Style Deduction
@@ -303,7 +323,7 @@ For propositional logic, a classic Hilbert system is KSC with modus ponens (MP):
 It can be shown that KSC+MP is sound and complete for propositional logic:
 
 $$
-\vdash_{KSC+\mathrm{MP}} \varphi ~\to~ \models \varphi
+\vdash_{KSC+\mathrm{MP}} \varphi ~\Leftrightarrow~ \models \varphi
 $$
 
 For instance, the identity tautology $$p\to p$$ can be proved with KS+MP as follows:
@@ -332,8 +352,8 @@ $$
 $$
 
 Note that the proof does not use the C axiom.
-This proof is called constructive: it uses only principles accepted in intuitionistic logic.
-Classical proofs may additionally use the C axiom, which allows a formula to be established from its double negation.
+This makes this proof constructive: it uses only principles accepted in intuitionistic logic.
+In contrast, classical proofs may additionally use the C axiom which, for instance, allows to establish a formula from its double negation.
 
 ## Natural Deduction
 
@@ -529,7 +549,7 @@ $$
 \vdash_{LK} \varphi ~~\Leftrightarrow~~ \models \varphi
 $$
 
-Note that the premises of the rules of sequent calculus only feature formula schemas that are present in the conclusion.
+Note that the premises of the rules of sequent calculus only feature formula schemas that are present in parts in the conclusion.
 This property is called analytic; it constrains the space of possible proofs and therefore helps with proof search.
 
 The only exception is the cut rule, which allows removing a formula when it appears both in the antecedents and the succedents of the premises.
@@ -594,17 +614,16 @@ The cut rule shines when the lemma is non-trivial, which is hard to exhibit in s
 
 Unlike KSC+MP and ND, sequent calculus does not feature an intuitionistic subset of rules.
 Instead, intuitionistic sequent calculus (called LJ by Gentzen) can be obtained by restricting the shape of the sequents to have at most one succedent formula.
-Having multiple alternative succedents is indeed not compatible with intuitionistic logic because it would allow obtaining a conclusion by eliminating all the alternatives.
 
 ## Recap
 
 We started by recursively defining what a propositional formula $$\varphi$$ is:
 
 $$
-\varphi ::= p \mid q \mid \ldots \mid \neg \varphi \mid (\varphi \land \varphi) \mid (\varphi \lor \varphi) \mid (\varphi  \varphi)
+\varphi ::= p \mid q \mid \ldots \mid \neg \varphi \mid (\varphi \land \varphi) \mid (\varphi \lor \varphi) \mid (\varphi \to \varphi)
 $$
 
-We then gave meaning to this language by evaluating formulas relative to a structure $$M$$ that maps propositional variables over a binary alphabet:
+We then gave meaning to this language by evaluating formulas relative to a structure $$M$$ that maps propositional symbols to a binary alphabet:
 
 $$
 \llbracket\varphi\rrbracket_M \in \{\mathrm{T}, \mathrm{F}\}
@@ -634,7 +653,7 @@ This enables us to reduce the decision problems SAT and !VAL to one another, and
 
 We noted that a certificate for SAT/!VAL may simply consist of a structure, which can be verified in linear time.
 We stated the Cook-Levin theorem: any problem that admits a polynomial certificate can be reduced to SAT.
-By definition, this means that SAT is NP-complete which is a class of problems widely believed not to admit polynomial-time algorithms.
+By definition, this means that SAT is NP-complete which is a category of problems widely believed not to admit polynomial-time algorithms.
 
 In contrast, a certificate for VAL/!SAT must prove the absence of a structure, which is less straightforward.
 In logic, this is done via a deduction system that recursively defines what a derivation is.
