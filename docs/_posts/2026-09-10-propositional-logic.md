@@ -8,12 +8,14 @@ It should be understandable to anyone with basic mathematical training.
 However, the more advanced observations assume some background in complexity theory.
 
 Propositional logic is the foundation upon which classical mathematics is built.
-However, to discuss it precisely, we actually need concepts from set theory and complexity theory.
+However, to define it precisely, we actually need concepts from set theory.
 To avoid circularity, we simply assume that these concepts are already defined in the meta language.
-In other words, this presentation distinguishes between two languages:
+One must be careful to distinguish between the base language of propositional logic and the meta language in which we discuss it.
+Confusing these two levels is one of the main conceptual pitfalls when studying propositional logic.
 
-- The base (or object) language is propositional logic.
-- The meta language is basic mathematics (and, at some point, Haskell).
+At its core, propositional logic can be viewed as a modularity mechanism for reasoning about the facts of a given structure while remaining protected from its complexity.
+For instance, it may be extremely challenging to decide whether a particular ecosystem has a stable equilibrium, but propositional logic only cares about whether it is true or not.
+Hence, the interface between a structure and propositional logic is minimal: it simply consists of a set of precomputed facts.
 
 ## Syntax of Propositional Logic
 
